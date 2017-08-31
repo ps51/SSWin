@@ -1,4 +1,4 @@
-﻿{
+{
     "@platforms": ["android", "iPhone", "iPad"],
     "id": "H50B1B930",/*应用的标识，创建应用时自动生成，勿手动修改*/
     "name": "时时彩app",/*应用名称，程序桌面图标名称*/
@@ -10,7 +10,7 @@
     "icons": {
         "72": "icon.png"
     },
-    "launch_path": "index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+    "launch_path": "pic_zoushi.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
     "developer": {
         "name": "",/*开发者名称*/
         "email": "",/*开发者邮箱地址*/
@@ -199,5 +199,65 @@
                 }
             }
         }
-    }
+    },
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [
+					"css/index.css",
+					"js/common.js",
+					"css/common.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"pic_zoushi.html": {
+				"resources": [
+					"img/massage/shezhi.png",
+					"img/massage/back.png",
+					"css/pic_zoushi.css",
+					"js/vue.js",
+					"css/common.css",
+					"css/data_show.css",
+					"js/pic__zoushi.js",
+					"js/showmassage.js",
+					"js/jquery-3.1.1.min.js",
+					"img/help.png",
+					"pic_shishicai.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"massage_help.html": {
+				"resources": [
+					"img/back.png",
+					"css/helps.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"pic_shishicai.html": {
+				"resources": [
+					"pic_pk10.html"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"css/zoushitu.css",
+				"img/图表走势(开奖号码分布).png",
+				"img/common/rm_select.png",
+				"img/图表走势(设置).png",
+				"img/shezhi.png",
+				"img/common/rm_normal.png",
+				"img/用户中心_PxCook.png",
+				"img/图表走势（选择彩种）.png",
+				"zoushitu.html",
+				"img/a8ec8a13632762d0bd6f73c1a0ec08fa513dc67f.jpg",
+				"img/图表走势.png"
+			]
+		}
+	}
 }

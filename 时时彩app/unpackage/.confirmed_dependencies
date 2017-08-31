@@ -1,0 +1,42 @@
+{
+	"index.html": {
+		"resources": [
+			"css/index.css",
+			"js/common.js",
+			"css/common.css"
+		],
+		"refer": []
+	},
+	"pic_zoushi.html": {
+		"resources": [
+			"img/massage/shezhi.png",
+			"img/massage/back.png",
+			"css/pic_zoushi.css",
+			"js/vue.js",
+			"css/common.css",
+			"css/data_show.css",
+			"js/pic__zoushi.js",
+			"js/showmassage.js",
+			"js/jquery-3.1.1.min.js",
+			"img/help.png",
+			"pic_shishicai.html"
+		],
+		"refer": [
+			"pic_shishicai.html"
+		]
+	},
+	"massage_help.html": {
+		"resources": [
+			"img/back.png",
+			"css/helps.css"
+		]
+	},
+	"pic_shishicai.html": {
+		"resources": [
+			"pic_pk10.html"
+		],
+		"refer": [
+			"pic_pk10.html"
+		]
+	}
+}

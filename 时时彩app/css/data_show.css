@@ -1,0 +1,65 @@
+.app{
+	width:100%;
+	height:auto;
+	background: #FFFFFF;
+	font-size: .8rem;
+}
+.app tr{
+	width:100%;
+	height:2rem;
+	/*border:1px solid gray;*/
+}
+.app tr th{
+	width:8%;
+	border-right:2px solid #E2E2DE;
+}
+.app tr th.th_2{
+	width:9%;
+}
+ .app tr th.th_4{
+	width:10%;
+}
+.app tr td{
+	border:2px solid #E2E2DE;
+}
+.app tr td span{
+	display: inline-block;
+	width:1.5rem;
+	height:1.5rem;
+	line-height: 1.5rem;
+	color:#CAC5C0;
+	border:none
+}
+.app tr td span.huise{
+	border:1px solid darkslategray;
+	border-radius:50%;
+	background: #0198E7;
+	color:#FFF;
+}
+.app tr td span.bg_color{
+	background-color: #D91D37;
+}
+.app tr td span.changches{
+	/*红色*/
+	width:90%;
+	height:60%;
+	border-radius:5px;
+	line-height: 1rem;
+	color: #D91D37;
+}
+.app tr td span.ertong{
+	/*蓝色*/
+	color:#0198E7;
+	/*border:1px solid #0198E7;*/
+}
+/*三同*/
+.app tr td span.santong{
+	color:#00FF40;
+	/*border:1px solid #00FF40;*/
+}
+[v-cloak] {
+  display: none;
+}
+/*隔行换色*/
+tr:nth-of-type(odd){background:#fff;}
+tr:nth-of-type(even){ background:#F8F8F8; }
