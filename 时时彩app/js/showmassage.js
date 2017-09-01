@@ -1,6 +1,8 @@
 $(function(){
 	$("#caizhong_mian").click(function(){
 		$("#caizhong_shu").fadeToggle();
+		$(".sanjiao").toggle();
+		$(".daosanjiao").toggle();
 	})
 	
 $("#caizhong_shu ul li").each(function () {
@@ -10,11 +12,6 @@ $("#caizhong_shu ul li").each(function () {
               $("#caizhong_shu").fadeToggle();
 });
 }) 
-
-if($("#tress").find("tr td span:last").text()!=""){
-    $("#tress").find("tr td span:last").hide();
-}
-
 
 
  

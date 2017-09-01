@@ -32,7 +32,7 @@
 			<div class="caizhong">
 				<span class="span">彩种</span>
 				<div id="caizhong_mian">
-					<span class="caipiao_leixing">北京PK10</span><span class="sanjiao"></span>
+					<span class="caipiao_leixing">北京PK10</span><span class="sanjiao"></span><span class="daosanjiao"></span>
 				</div>
 			</div>
 			<!--彩种设置-->
@@ -64,7 +64,8 @@
 	        <li><a href="#" class="">分类和值走势图</a></li>
 	    </ul>
 <!--二级菜单-->
-	    <tem id="menu_con">
+<div id="app">
+	    <div id="menu_con">
 	        <div class="tag" style="display:block" id="app">
 	        	<!--数据展示开始-->
 	             <table class="app" >
@@ -81,15 +82,15 @@
 	            		<th class="th_4">二同</th>
 	            		<th class="th_4">不同</th>
 	            	</tr>
-	            	<tr v-for="item in data.datas" class="trss" id="tress" v-cloak>
+	            	<tr v-for="item in data" class="trss" id="tress" v-cloak>
 	            		<td>{{item.period | jiequ}}</td>
 	            		<td style="color:#D91D37">{{item.number}}</td>
-	            		<td><span class="huise">{{item.number | showTime}}</span></td>
-	            		<td><span class="huise">{{item.number | showTime1}}</span></td>
-	            		<td><span class="huise">{{item.number | showTime2}}</span></td>
-	            		<td><span class="huise">{{item.number | showTime3}}</span></td>
-	            		<td><span class="huise">{{item.number | showTime4}}</span></td>
-	            		<td><span class="huise">{{item.number | showTime5}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime1}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime2}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime3}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime4}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime5}}</span></td>
 	            		<td><span  class="changches ertong">{{item.number | sum0}}</span></td>
 	            		<td><span  class="changches santong">{{item.number | sum01}}</span></td>
 	            		<td><span   class="changches">{{item.number | sum02}}</span></td>
@@ -112,23 +113,24 @@
 	            		<th>9/12</th>
 	            		<th>10/11</th>
 	            	</tr>
-	            	<tr v-for="item in data.datas" class="trss">
+	            	<tr v-for="item in data" class="trss">
 	            		<!--和值走势分析-->
 	            		<td>{{item.period | jiequ}}</td>
 	            		<td class="sures">{{item.number}}</td>
 	            		<td>{{item.number | sum}}</td><!--和值-->
 	            		<td><span class="huise sums"></span></td><!--和值3/18-->
-	            		<td><span class="huise">{{item.number | sum_2}}</span></td><!--和值4/17-->
-	            		<td><span class="huise">{{item.number | sum_3}}</span></td><!--和值5/16-->
-	            		<td><span class="huise">{{item.number | sum_4}}</span></td><!--和值6/15-->
-	            		<td><span class="huise">{{item.number | sum_5}}</span></td><!--和值7/14-->
-	            		<td><span class="huise">{{item.number | sum_6}}</span></td><!--和值8/13-->
-	            		<td><span class="huise">{{item.number | sum_7}}</span></td><!--和值9/12-->
-	            		<td><span class="huise">{{item.number | sum_8}}</span></td><!--和值10/11-->
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_2}}</span></td><!--和值4/17-->
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_3}}</span></td><!--和值5/16-->
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_4}}</span></td><!--和值6/15-->
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_5}}</span></td><!--和值7/14-->
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_6}}</span></td><!--和值8/13-->
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' "">{{item.number | sum_7}}</span></td><!--和值9/12-->
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_8}}</span></td><!--和值10/11-->
 	            	</tr>
 	            </table>
 	         </div> 
 	    </div>
+	   </div>
     </div>
 </div>
 	<!--数据展示结束-->

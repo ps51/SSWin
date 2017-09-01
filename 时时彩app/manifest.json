@@ -238,7 +238,8 @@
 			},
 			"pic_shishicai.html": {
 				"resources": [
-					"pic_pk10.html"
+					"pic_pk10.html",
+					"pic_zoushi.html"
 				],
 				"refer": [],
 				"priority": 0

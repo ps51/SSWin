@@ -32,7 +32,7 @@
 			<div class="caizhong">
 				<span class="span">彩种</span>
 				<div id="caizhong_mian">
-					<span class="caipiao_leixing">重庆时时彩</span><span class="sanjiao"></span>
+					<span class="caipiao_leixing">重庆时时彩</span><span class="sanjiao"></span><span class="daosanjiao"></span>
 				</div>
 			</div>
 			<!--彩种设置-->
@@ -60,14 +60,15 @@
 	<div id="menu">
 <!--tag标题-->
 	    <ul id="nav">
-	        <li><a href="#" class="selected">前三号码分布图</a></li>
-	        <li><a href="#" class="">后三号码分布图</a></li>
+	        <li><a href="javascript:;" class="selected">前三号码分布图</a></li>
+	        <li><a href="javascript:;" class="">后三号码分布图</a></li>
 	    </ul>
 <!--二级菜单-->
-	    <tem id="menu_con">
-	        <div class="tag" style="display:block" id="app">
+<div id="app">
+	    <div id="menu_con">
+	        <div class="tag" style="display:block" >
 	        	<!--数据展示开始-->
-	             <table class="app" >
+	             <table class="app" id="app">
 	            	<tr class="shishicai_data">
 	            		<th>期号</th>
 	            		<th>0</th>
@@ -84,23 +85,26 @@
 	            		<th>组三</th>
 	            		<th>组六</th>
 	            	</tr>
-	            	<tr v-for="item in data.datas" class="shishicai_data" id="tress" v-cloak>
+	            	<tr v-for="item in data" class="shishicai_data" id="tress" v-cloak>
 	            		<td>{{item.period | jiequ}}</td>
-	            		<td><span class="huise">{{item.number | showTime}}</span></td>
-	            		<td><span class="huise">{{item.number | showTime}}</span></td>
-	            		<td><span class="huise">{{item.number | showTime1}}</span></td>
-	            		<td><span class="huise">{{item.number | showTime2}}</span></td>
-	            		<td><span class="huise">{{item.number | showTime3}}</span></td>
-	            		<td><span class="huise">{{item.number | showTime4}}</span></td>
-	            		<td><span class="huise">{{item.number | showTime5}}</span></td>
-	            		<td><span  class="changches ertong">{{item.number | sum0}}</span></td>
-	            		<td><span  class="changches santong">{{item.number | sum01}}</span></td>
-	            		<td><span   class="changches">{{item.number | sum02}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime9}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime1}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime2}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime3}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime4}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime5}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime6}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime7}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime8}}</span></td>
+	            		<td><span  class="changches ertong">{{item.number | sames}}</span></td>
+	            		<td><span  class="changches santong">{{item.number |sames1}}</span></td>
+	            		<td><span   class="changches">{{item.number}}</span></td>
 	            	</tr>
 	            	
 	            </table>
 	         </div> 
-	        <div class="tag" style="display:none" id="apps">
+	        <div class="tag" style="display:none">
 	            <table class="app">
 	            	<tr class="trss">
 	            		<th class="th_2">期号</th>
@@ -115,28 +119,23 @@
 	            		<th>9/12</th>
 	            		<th>10/11</th>
 	            	</tr>
-	            	<tr v-for="item in data.datas" class="shishicai_data">
-	            		<!--和值走势分析-->
+	            	<tr v-for="item in data" class="shishicai_data">
+	            		          <!-- 和值走势分析 -->
 	            		<td>{{item.period | jiequ}}</td>
 	            		<td class="sures">{{item.number}}</td>
 	            		<td>{{item.number | sum}}</td><!--和值-->
-	            		<td><span class="huise sums"></span></td><!--和值3/18-->
-	            		<td><span class="huise">{{item.number | sum_2}}</span></td><!--和值4/17-->
-	            		<td><span class="huise">{{item.number | sum_3}}</span></td><!--和值5/16-->
-	            		<td><span class="huise">{{item.number | sum_4}}</span></td><!--和值6/15-->
-	            		<td><span class="huise">{{item.number | sum_5}}</span></td><!--和值7/14-->
-	            		<td><span class="huise">{{item.number | sum_6}}</span></td><!--和值8/13-->
-	            		<td><span class="huise">{{item.number | sum_7}}</span></td><!--和值9/12-->
-	            		<td><span class="huise">{{item.number | sum_8}}</span></td><!--和值10/11-->
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' "></span></td><!--和值3/18-->
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_2}}</span></td><!--和值4/17-->
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_3}}</span></td><!--和值5/16-->
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_4}}</span></td><!--和值6/15-->
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_5}}</span></td><!--和值7/14-->
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_6}}</span></td><!--和值8/13-->
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_7}}</span></td><!--和值9/12-->
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_8}}</span></td><!--和值10/11-->
 	            	</tr>
 	            </table>
 	         </div> 
 	    </div>
-    </div>
-</div>
-	<!--数据展示结束-->
-	<!--主体部分结束-->
-	
 	<!--走势图蒙版-->
 		<div class="show_top" id="maskLayer" style="display:none">
 			<!--中间部分-->
@@ -153,21 +152,21 @@
 				 			</div>
 				 			<div class="content">
 				 				<a href="#">
-				 					<input id="inputs1" class="current" name="qishu" type="radio" checked="checked"/>
-				 					<label for="inputs1"><span>近30期</span></label>
+				 					<input onclick="dianji()" id="inputs1" class="current" name="qishu" type="radio" checked="checked"/>
+				 					<label for="inputs1"><span v-on:click="dianji()">近30期</span></label>
 				 				</a>
 				 				<a href="#">
-				 					<input id="inputs2" class="current" name="qishu" type="radio"/><label for="inputs2"><span>近50期</span>
+				 					<input id="inputs2" class="current" name="qishu" type="radio"/><label for="inputs2"><span v-on:click="dianji1()">近50期</span>
 				 						
 				 					</label>
 				 				</a>
 				 				<a href="#">
-				 					<input id="inputs3" class="current" name="qishu" type="radio"/><label for="inputs3"><span>近100期</span>
+				 					<input id="inputs3" class="current" name="qishu" type="radio"/><label for="inputs3"><span v-on:click="dianji2()">近100期</span>
 				 						
 				 					</label>
 				 				</a>
 				 				<a href="#">
-				 					<input id="inputs4" class="current" name="qishu" type="radio"/><label for="inputs4"><span>近200期</span>
+				 					<input id="inputs4" class="current" name="qishu" type="radio"/><label for="inputs4"><span v-on:click="dianji3()">近200期</span>
 				 						
 				 					</label>
 				 				</a>
@@ -230,9 +229,17 @@
 			</div>
 		</div>
 	<!--走势图蒙版结束-->
+
+
+	  </div>
+   </div>
+</div>
+	<!--数据展示结束-->
+	<!--主体部分结束-->
 		<script src="js/jquery-3.1.1.min.js"></script>
 		<script src="js/vue.js"></script>
 		<script src="js/showmassage.js"></script>
 		<script src="js/pic__zoushi.js"></script>
+		<script src="js/shishicai_vue.js"></script>
 </body>
 </html>

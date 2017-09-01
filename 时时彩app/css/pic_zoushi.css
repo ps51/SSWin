@@ -40,24 +40,29 @@
 }
 .caizhong .span{
 	width:10%;
-	height:100%;
-	font-size: 1rem;
+	height:80%;
+	font-size: .8rem;
 	float: left;
 	display: inline-block;
 	text-align: center;
+	padding-top: 0.4rem;
 	padding-left:1rem;
 }
 #caizhong_mian{
-	width:60%;
-	height:80%;
-	margin-top:2%;
+	width:70%;
+	height:75%;
+	margin-top:0.4rem;
+	font-weight: bold;
+	font-size:1rem;
 	border:1px solid gray;
 	border-radius:10px;
 	display: inline-block;
 	text-align: center;
 	text-align: left;
 	position: relative;
+	float: left;
 }
+/*正三角*/
 .caizhong span.sanjiao{
 	position: absolute;
 	right:10%;
@@ -66,12 +71,23 @@
 	border:.5rem solid red;
 	border-color:#E65A59 transparent transparent transparent;
 }
+/*倒三角*/
+.caizhong span.daosanjiao{
+	position: absolute;
+	right:10%;
+	top:10%;
+	display: inline-block;
+	border:.5rem solid red;
+	border-color: transparent transparent #E65A59 transparent ;
+	display: none;
+}
 #caizhong_mian .caipiao_leixing{
 	display: inline-block;
 	width:70%;
 	height:100%;
-	line-height: 250%;
+	line-height: 220%;
 	text-align: center;
+	
 }
 #caizhong_shu{
 	width:100%;
@@ -89,7 +105,11 @@
 	line-height: 2rem;
 	margin:10px 1%;
 }
-
+#caizhong_shu ul li a{
+    font-weight: bold;
+	font-size:1rem;
+	color:#000;
+}
 .set_massage{
 	display: inline-block;
 	height:80%;
@@ -166,8 +186,8 @@ background-color: #9D9D9D;
     height: 100%;
     left: 0;
     top: 0;
-    filter: alpha(opacity=50);
-    opacity: 0.8;
+    filter: alpha(opacity=95);
+    opacity: 0.95;
     right: 0;
     z-index: 1;
     font-weight: bold;
@@ -185,6 +205,8 @@ background-color: #9D9D9D;
 	bottom: 0;
 	margin:auto;
 	background: #FFFFFF;
+	background:url(../img/massage/bg_cos.png) no-repeat;
+	background-size: 100% ;
 	border:1px solid dimgray;
 	border-radius:10px;
 	z-index: 2;
@@ -243,6 +265,7 @@ background-color: #9D9D9D;
 	font-size:20px;
 	text-indent: .8rem;
 }
+/*取消 提交*/
 .main input{
 vertical-align: middle;	
 border-color:red;
@@ -281,4 +304,5 @@ float: left;
 	background: red;
 	color:#fff;
 }
+/*取消 提交*/
 /*蒙版结束*/

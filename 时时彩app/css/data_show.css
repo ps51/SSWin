@@ -22,22 +22,25 @@
 .app tr td{
 	border:2px solid #E2E2DE;
 }
-.app tr td span{
+.huise{
 	display: inline-block;
 	width:1.5rem;
 	height:1.5rem;
 	line-height: 1.5rem;
-	color:#CAC5C0;
-	border:none
-}
-.app tr td span.huise{
 	border:1px solid darkslategray;
 	border-radius:50%;
 	background: #0198E7;
 	color:#FFF;
+	border:none;
 }
-.app tr td span.bg_color{
-	background-color: #D91D37;
+.bg_color{
+	display: inline-block;
+	width:1rem;
+	/*height:1.5rem;*/
+	border-radius:50%;
+	background-color: #0198E7;
+	color:#FFF;
+	padding:0 1px;
 }
 .app tr td span.changches{
 	/*红色*/
@@ -47,13 +50,13 @@
 	line-height: 1rem;
 	color: #D91D37;
 }
-.app tr td span.ertong{
+.app tr td span.santong{
 	/*蓝色*/
 	color:#0198E7;
 	/*border:1px solid #0198E7;*/
 }
 /*三同*/
-.app tr td span.santong{
+.app tr td span.ertong{
 	color:#00FF40;
 	/*border:1px solid #00FF40;*/
 }

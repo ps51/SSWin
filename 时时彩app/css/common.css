@@ -1,8 +1,8 @@
-/* Copyright 2008 TSXMLOVE. All Rights Reserved. */
+/* Copyright 2017 TSXMLOVE. All Rights Reserved. */
 * {
 padding: 0px;
 margin: 0px;
-font-family:Arial, Verdana, Tahoma, "宋体", Helvetica, sans-serif;
+font-family:Arial, Verdana, Tahoma, "微软雅黑", Helvetica, sans-serif;
 line-height: 150%;
 text-decoration: none;
 }
@@ -130,4 +130,23 @@ _background-color:#00FFFF;/*IE6*/
  font-size:0px;
  line-height:0px;
  zoom: 1;
+}
+
+
+/*媒体查询设置*/
+
+@media screen and (max-width: 320px){
+    html,body{
+        font-size:16px;
+    }
+}
+@media screen and (max-width: 677px) and (min-width: 321px){
+    html,body{
+        font-size:18px;
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 678px){
+    html,body{
+        font-size:20px;
+    }
 }
