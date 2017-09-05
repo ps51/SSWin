@@ -22,6 +22,11 @@
 	padding:0.1rem 1rem;
 	float: left;
 }
+.tops span img{
+	padding-top:.4rem;
+	width:1rem;
+	height:auto;
+}
 .tops span.helps{
 	width: 60%;
 	height:100%;
@@ -33,18 +38,46 @@
 }
 .centers{
 	width:100%;
-	margin:5rem auto;
+	padding: 4rem 0;
 }
 .centers .cen_main{
 	width:80%;
 	height: 100%;
 	margin:0 auto;
+	font-size: .8rem;
 }
-.centers .cen_main p{
+.centers .cen_main .zhuyao{
 	text-align: left;
 	float: left;
 	font-family: "微软雅黑";
-	font-size: 1rem;
+	font-size: .8rem;
 	line-height: 2rem;
+	
 }
 /*信息提示部分css代码结束*/
+.play_way{
+	
+	padding-bottom:1rem ;
+}
+.zhongjiang table tr{
+width:100%;
+border:1px solid gray;
+text-align: center;
+}
+.zhongjiang table tr th,.zhongjiang table tr td{
+border:1px solid gray;
+width:33%;
+}
+.zhongjiang table tr td p{
+	color:#000;
+}
+.zhongjiang table tr td span{
+	color:red;
+}
+.kaijiang{
+	margin-top:1rem;
+}
+.bolid{
+	font-weight: bold;
+	padding-top: 1rem;
+}

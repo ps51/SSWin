@@ -19,7 +19,10 @@
 			"js/showmassage.js",
 			"js/jquery-3.1.1.min.js",
 			"img/help.png",
-			"pic_shishicai.html"
+			"pic_shishicai.html",
+			"img/common/arrow2-拷贝-2@3x.png",
+			"js/kuaisan_vue.js",
+			"img/massage/设置-@3x.png"
 		],
 		"refer": [
 			"pic_shishicai.html"
@@ -28,7 +31,8 @@
 	"massage_help.html": {
 		"resources": [
 			"img/back.png",
-			"css/helps.css"
+			"css/helps.css",
+			"img/common/arrow2-拷贝-2@3x.png"
 		]
 	},
 	"pic_shishicai.html": {

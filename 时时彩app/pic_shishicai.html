@@ -39,7 +39,7 @@
 			<!--设置提示信息-->
 			<div class="set_massage">
 				<a href="#" onclick="showD()">
-					<img src="img/massage/shezhi.png" alt="" />
+					<img src="img/massage/设置-@3x.png" alt="" />
 				</a>
 			</div>
 			<!--设置提示信息-->
@@ -50,6 +50,7 @@
 					<li><a href="pic_zoushi.html">江苏快三</a></li>
 					<li><a href="pic_shishicai.html">重庆时时彩</a></li>
 					<li><a href="pic_pk10.html">北京PK10</a></li>
+
 				</ul>
 			</div>
 		</div>
@@ -68,7 +69,7 @@
 	    <div id="menu_con">
 	        <div class="tag" style="display:block" >
 	        	<!--数据展示开始-->
-	             <table class="app" id="app">
+	             <table class="app">
 	            	<tr class="shishicai_data">
 	            		<th>期号</th>
 	            		<th>0</th>
@@ -99,40 +100,46 @@
 	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime8}}</span></td>
 	            		<td><span  class="changches ertong">{{item.number | sames}}</span></td>
 	            		<td><span  class="changches santong">{{item.number |sames1}}</span></td>
-	            		<td><span   class="changches">{{item.number}}</span></td>
+	            		<td><span   class="changches">{{item.number | dissame}}</span></td>
 	            	</tr>
 	            	
 	            </table>
 	         </div> 
 	        <div class="tag" style="display:none">
-	            <table class="app">
-	            	<tr class="trss">
-	            		<th class="th_2">期号</th>
-	            		<th class="th_2">奖号</th>
-	            		<th class="th_3">和值</th>
-	            		<th>3/18</th>
-	            		<th>4/17</th>
-	            		<th>5/16</th>
-	            		<th>6/15</th>
-	            		<th>7/14</th>
-	            		<th>8/13</th>
-	            		<th>9/12</th>
-	            		<th>10/11</th>
+	             <table class="app">
+	            	<tr class="shishicai_data">
+	            		<th>期号</th>
+	            		<th>0</th>
+	            		<th>1</th>
+	            		<th>2</th>
+	            		<th>3</th>
+	            		<th>4</th>
+	            		<th>5</th>
+	            		<th>6</th>
+	            		<th>7</th>
+	            		<th>8</th>
+	            		<th>9</th>
+	            		<th>豹子</th>
+	            		<th>组三</th>
+	            		<th>组六</th>
 	            	</tr>
-	            	<tr v-for="item in data" class="shishicai_data">
-	            		          <!-- 和值走势分析 -->
+	            	<tr v-for="item in data" class="shishicai_data" id="tress" v-cloak>
 	            		<td>{{item.period | jiequ}}</td>
-	            		<td class="sures">{{item.number}}</td>
-	            		<td>{{item.number | sum}}</td><!--和值-->
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' "></span></td><!--和值3/18-->
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_2}}</span></td><!--和值4/17-->
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_3}}</span></td><!--和值5/16-->
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_4}}</span></td><!--和值6/15-->
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_5}}</span></td><!--和值7/14-->
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_6}}</span></td><!--和值8/13-->
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_7}}</span></td><!--和值9/12-->
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_8}}</span></td><!--和值10/11-->
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | shows9}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | shows}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | shows1}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | shows2}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | shows3}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | shows4}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | shows5}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | shows6}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | shows7}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | shows8}}</span></td>
+	            		<td><span  class="changches ertong">{{item.number | sames2}}</span></td>
+	            		<td><span  class="changches santong">{{item.number |sames3}}</span></td>
+	            		<td><span   class="changches">{{item.number | dissame1}}</span></td>
 	            	</tr>
+	            	
 	            </table>
 	         </div> 
 	    </div>
@@ -142,7 +149,7 @@
 			<div class="top_cen">
 				 <div  class="design">
 				 	<p class="zoushi">走势图设制</p>
-				 	<a href="massage_cqshishicai.html"><span><img src="img/help.png" alt="帮助" /></span></a>
+				 	<a href="massage_cqshishicai.html"><span><img src="img/massage/帮助@3x.png" alt="帮助" /></span></a>
 				 </div>
 				 <div class="mian">
 				 	<ul>
@@ -220,12 +227,15 @@
 				 				</a>
 				 			</div>
 				 		</li>
+				 		<li>
+					 		<div id="tijiao">
+								<button id="popWindow" class="reset" onclick="closeDiv()"/>取消</button>
+								<button class="sures" onclick="showWindow()"/ >确定</button>
+							</div>
+						</li>
 				 	</ul>
 				 </div>
-				 <div id="tijiao">
-				<button id="popWindow" onclick="closeDiv()"/>取消</button>
-				<button onclick="showWindow()"/ >提交</button>
-			</div>
+				 
 			</div>
 		</div>
 	<!--走势图蒙版结束-->

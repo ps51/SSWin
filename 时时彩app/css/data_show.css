@@ -10,7 +10,6 @@
 	/*border:1px solid gray;*/
 }
 .app tr th{
-	width:8%;
 	border-right:2px solid #E2E2DE;
 }
 .app tr th.th_2{
@@ -21,6 +20,7 @@
 }
 .app tr td{
 	border:2px solid #E2E2DE;
+	color:#555;
 }
 .huise{
 	display: inline-block;
@@ -36,7 +36,7 @@
 .bg_color{
 	display: inline-block;
 	width:1rem;
-	/*height:1.5rem;*/
+	font-weight: bold;
 	border-radius:50%;
 	background-color: #0198E7;
 	color:#FFF;
@@ -65,4 +65,4 @@
 }
 /*隔行换色*/
 tr:nth-of-type(odd){background:#fff;}
-tr:nth-of-type(even){ background:#F8F8F8; }
+tr:nth-of-type(even){ background:#F9F8F0; }

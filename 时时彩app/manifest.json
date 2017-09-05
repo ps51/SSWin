@@ -12,8 +12,8 @@
     },
     "launch_path": "pic_zoushi.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
     "developer": {
-        "name": "",/*开发者名称*/
-        "email": "",/*开发者邮箱地址*/
+        "name": "wangwei",/*开发者名称*/
+        "email": "jwjruning@163.com",/*开发者邮箱地址*/
         "url": ""/*开发者个人主页地址*/
     },
     "permissions": {
@@ -223,7 +223,10 @@
 					"js/showmassage.js",
 					"js/jquery-3.1.1.min.js",
 					"img/help.png",
-					"pic_shishicai.html"
+					"pic_shishicai.html",
+					"img/common/arrow2-拷贝-2@3x.png",
+					"js/kuaisan_vue.js",
+					"img/massage/设置-@3x.png"
 				],
 				"refer": [],
 				"priority": 0
@@ -231,7 +234,8 @@
 			"massage_help.html": {
 				"resources": [
 					"img/back.png",
-					"css/helps.css"
+					"css/helps.css",
+					"img/common/arrow2-拷贝-2@3x.png"
 				],
 				"refer": [],
 				"priority": 0

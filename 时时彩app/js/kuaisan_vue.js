@@ -147,7 +147,7 @@
 			}
 			xhr.open("post","http://47.94.140.92:8080/JDLot/type/jsks/alllist",true);
 			xhr.setRequestHeader("Content-Type","application/json");//设置请求头
-			xhr.send("PageNum=2&PageSize=220");
+			xhr.send();
 				},
 			methods:{
 				    dianji:function (){ 
