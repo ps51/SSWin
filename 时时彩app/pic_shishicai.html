@@ -39,7 +39,7 @@
 			<!--设置提示信息-->
 			<div class="set_massage">
 				<a href="#" onclick="showD()">
-					<img src="img/massage/设置-@3x.png" alt="" />
+					<img src="img/massage/design3x.png" alt="" />
 				</a>
 			</div>
 			<!--设置提示信息-->
@@ -62,7 +62,7 @@
 <!--tag标题-->
 	    <ul id="nav">
 	        <li><a href="javascript:;" class="selected">前三号码分布图</a></li>
-	        <li><a href="javascript:;" class="">后三号码分布图</a></li>
+	        <li><a href="javascript:;" >后三号码分布图</a></li>
 	    </ul>
 <!--二级菜单-->
 <div id="app">
@@ -71,7 +71,7 @@
 	        	<!--数据展示开始-->
 	             <table class="app">
 	            	<tr class="shishicai_data">
-	            		<th>期号</th>
+	            		<th class="fist">期号</th>
 	            		<th>0</th>
 	            		<th>1</th>
 	            		<th>2</th>
@@ -108,7 +108,7 @@
 	        <div class="tag" style="display:none">
 	             <table class="app">
 	            	<tr class="shishicai_data">
-	            		<th>期号</th>
+	            		<th  class="fist">期号</th>
 	            		<th>0</th>
 	            		<th>1</th>
 	            		<th>2</th>
@@ -139,9 +139,71 @@
 	            		<td><span  class="changches santong">{{item.number |sames3}}</span></td>
 	            		<td><span   class="changches">{{item.number | dissame1}}</span></td>
 	            	</tr>
-	            	
 	            </table>
 	         </div> 
+	         <ul class="data_fenxi">
+	         	<li class="lls lls1">
+	         		<ol>
+	         			<li class="fist">出现次数</li>
+	         			<li>23</li>
+	         			<li>12</li>
+	         			<li>34</li>
+	         			<li>23</li>
+	         			<li>11</li>
+	         			<li>33</li>
+	         			<li>31</li>
+	         			<li>45</li>
+	         			<li>24</li>
+	         			<li class="last">23</li>
+	         		</ol>
+	         	</li>
+	         	<li class="lls lls2">
+	         		<ol>
+	         			<li class="fist">平均遗漏</li>
+	         			<li>6</li>
+	         			<li>7</li>
+	         			<li>5</li>
+	         			<li>9</li>
+	         			<li>6</li>
+	         			<li>6</li>
+	         			<li>8</li>
+	         			<li>5</li>
+	         			<li>8</li>
+	         			<li class="last">7</li>
+	         		</ol>
+	         	</li>
+	         	<li class="lls lls3">
+	         		<ol>
+	         			<li class="fist">最大遗漏</li>
+	         			<li>8</li>
+	         			<li>8</li>
+	         			<li>7</li>
+	         			<li>4</li>
+	         			<li>9</li>
+	         			<li>8</li>
+	         			<li>4</li>
+	         			<li>6</li>
+	         			<li>12</li>
+	         			<li class="last">34</li>
+	         		</ol>
+	         	</li>
+	         	<li class="lls lls4">
+	         		<ol>
+	         			<li class="fist">最大连出</li>
+	         			<li>5</li>
+	         			<li>8</li>
+	         			<li>6</li>
+	         			<li>15</li>
+	         			<li>11</li>
+	         			<li>9</li>
+	         			<li>6</li>
+	         			<li>10</li>
+	         			<li>7</li>
+	         			<li class="last">8</li>
+	         		</ol>
+	         	</li>
+	         </ul>
+	            	
 	    </div>
 	<!--走势图蒙版-->
 		<div class="show_top" id="maskLayer" style="display:none">
@@ -149,7 +211,7 @@
 			<div class="top_cen">
 				 <div  class="design">
 				 	<p class="zoushi">走势图设制</p>
-				 	<a href="massage_cqshishicai.html"><span><img src="img/massage/帮助@3x.png" alt="帮助" /></span></a>
+				 	<a href="massage_cqshishicai.html"><span><img src="img/massage/help3x.png" alt="帮助" /></span></a>
 				 </div>
 				 <div class="mian">
 				 	<ul>
@@ -159,7 +221,7 @@
 				 			</div>
 				 			<div class="content">
 				 				<a href="#">
-				 					<input onclick="dianji()" id="inputs1" class="current" name="qishu" type="radio" checked="checked"/>
+				 					<input id="inputs1" class="current" name="qishu" type="radio" checked="checked"/>
 				 					<label for="inputs1"><span v-on:click="dianji()">近30期</span></label>
 				 				</a>
 				 				<a href="#">

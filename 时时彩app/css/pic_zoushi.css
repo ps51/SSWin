@@ -20,15 +20,15 @@
 }
 #pic_top .pic_set .back_pre{
 	display: inline-block;
-	height:50px;
+	height:60px;
 	width:100%;
-	text-indent:1rem;
+	text-indent:0.5rem;
 	line-height: 50px;
 	text-decoration: none;
 	font-size: 1rem;
 	color:#EB8C88;
 	float:right;
-	background: url(../img/common/arrow2-拷贝-2@3x.png) no-repeat center left;	
+	background: url(../img/common/arrow3x.png) no-repeat center left;	
 	background-size: 20% 50%;
 }
 .caizhong{
@@ -133,13 +133,13 @@
 /*彩票具体分布*/
 #mian_body{
 	width:100%;
-	height:500px;
+	height:800px;
 	margin:2.9rem auto;
 	background: #F9F8F0;
 }
 .bottom li{
             width:100%;
-            height: 300px;
+            height:100%;
             background-color: pink;
             display: none;
         }
@@ -151,9 +151,7 @@
         }
 /*选项卡功能代码*/
 #menu{
-	width:100%; 
-	/*overflow:hidden;*/ 
-	margin:0 auto;}
+	width:100%; }
 #menu #nav {
 	display:block;
 	height:3rem;
@@ -167,6 +165,7 @@
 	width:40%;
 	height:100%;}
 #menu #nav li a {
+	width:100%;
 	display:block;
 	line-height:2.8rem;
 	text-decoration:none;
@@ -177,7 +176,6 @@
 #menu_con{ 
 	width:100%; 
 	display: block;
-	height:135px;
 	 border-top:none;
 	 clear: both;}
 .tag{ 
@@ -231,11 +229,11 @@ background-color: #9D9D9D;
     height:100%;
 	font-size: 1rem;
 	width:80%;
-	line-height: 4rem;
+	line-height: 4.3rem;
 	display: inline-block;
 	color:#000000;
 	text-align:left;
-	background: url(../img/massage/设置-@3x.png) no-repeat center left;
+	background: url(../img/massage/design3x.png) no-repeat center left;
 	background-size: 14% 50%;
 	text-indent:3rem;
 }
@@ -245,7 +243,7 @@ background-color: #9D9D9D;
 	height:2rem;
 	position: absolute;
 	right:5%;
-	top:3%;
+	top:5%;
 }
 .design span img{
 	width:100%;
@@ -308,7 +306,7 @@ float: left;background:url(../img/massage/未选中圆圈@3x.png)no-repeat;
 	position: absolute;
 	left:0;
 	right:0;
-	bottom: 10%;
+	bottom: 5%;
 }
 #tijiao button{
 	display: inline-block;

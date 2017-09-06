@@ -12,6 +12,9 @@
 .app tr th{
 	border-right:2px solid #E2E2DE;
 }
+.app tr th.fist{
+	width:18%;
+}
 .app tr th.th_2{
 	width:9%;
 }
@@ -66,3 +69,49 @@
 /*隔行换色*/
 tr:nth-of-type(odd){background:#fff;}
 tr:nth-of-type(even){ background:#F9F8F0; }
+.lls:nth-of-type(odd){background:#fff;}
+.lls:nth-of-type(even){ background:#F9F8F0; }
+
+/*统计部分*/
+.data_fenxi{
+	width:100%;
+	height:8.5rem;
+	position: fixed;
+	bottom:0;
+	display: none;
+}
+.data_fenxi li{
+width:100%;
+height:2rem;
+border:1px solid gray;
+}
+.data_fenxi li ol{
+	width:100%;
+	height:100%;
+}
+.data_fenxi li ol li{
+	width:5.9%;
+	height:100%;
+	float: left;
+	border-top: none;
+	border-bottom: none;
+	border-left: none;
+	line-height: 2rem;
+	font-size:0.5rem;
+}
+.data_fenxi li ol li.fist{
+	width:17%;
+
+}
+.lls1{
+	color:#579ee8;
+}
+.lls2{
+	color:#d88927;
+}
+.lls3{
+	color:#6e8d57;
+}
+.lls4{
+	color:#ea7de1;
+}
