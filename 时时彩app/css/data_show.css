@@ -45,6 +45,15 @@
 	color:#FFF;
 	padding:0 1px;
 }
+.bg_color11{
+	display: inline-block;
+	width:1rem;
+	font-weight: bold;
+	border-radius:50%;
+	background-color: #D91D37;
+	color:#FFF;
+	padding:0 1px;
+}
 .app tr td span.changches{
 	/*红色*/
 	width:90%;
@@ -101,7 +110,6 @@ border:1px solid gray;
 }
 .data_fenxi li ol li.fist{
 	width:17%;
-
 }
 .lls1{
 	color:#579ee8;

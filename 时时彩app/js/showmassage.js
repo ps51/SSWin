@@ -5,7 +5,7 @@ $(function(){
 		$(".daosanjiao").toggle();
 	})
 	
-$("#caizhong_shu ul li").each(function () {
+$("#caizhong_shu ul li ").each(function () {
         $(this).click(function () {
               $(this).css({
               	"border-color":"red",

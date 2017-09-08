@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" type="text/css" href="css/pic_zoushi.css"/>
 		<link rel="stylesheet" href="css/data_show.css" />
+		<link rel="stylesheet" href="css/pk10.css" />
 		<script type="text/javascript">
 					function showD() { 
 						document.getElementById('popWindow').style.display = 'block'; 
@@ -17,6 +18,11 @@
 							document.getElementById('popWindow').style.display = 'none'; 
 							document.getElementById('maskLayer').style.display = 'none'; 	
 					} 
+					function closeMassge(){
+						    document.getElementById('popWindow').style.display = 'none'; 
+							document.getElementById('maskLayer').style.display = 'none'; 
+							document.getElementById('data_fenxi').style.display="none"
+					}
 		</script>
 	</head>
 <body >
@@ -86,16 +92,16 @@
 	            	<tr v-for="item in data" class="trss" id="tress" v-cloak>
 	            		<td>{{item.period | jiequ}}</td>
 	            		<td style="color:#D91D37">{{item.number | sum}}</td><!-- 前三号码和值 -->
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number[0] | showTime}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime1}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime2}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime3}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime4}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime5}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime6}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime7}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime8}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime9}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color11' ">{{item.number | showTime0}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color11' ">{{item.number | showTime1}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color11' ">{{item.number | showTime2}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color11' ">{{item.number | showTime3}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color11' ">{{item.number | showTime4}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color11' ">{{item.number | showTime5}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color11' ">{{item.number | showTime6}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color11' ">{{item.number | showTime7}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color11' ">{{item.number | showTime8}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color11' ">{{item.number | showTime9}}</span></td>
 	            	</tr>
 	            	
 	            </table>
@@ -118,21 +124,84 @@
 	            	</tr>
 	            	<tr v-for="item in data" class="trss" id="tress" v-cloak>
 	            		<td>{{item.period | jiequ}}</td>
-	            		<td style="color:#D91D37">{{item.number | sum}}</td><!-- 前三号码和值 -->
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number[0] | showTime}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime1}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime2}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime3}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime4}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime5}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime6}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime7}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime8}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime9}}</span></td>
+	            		<td style="color:#D91D37">{{item.number | sum1}}</td><!-- 前三号码和值 -->
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color11' ">{{item.number | showTime00}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color11' ">{{item.number | showTime01}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color11' ">{{item.number | showTime02}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color11' ">{{item.number | showTime03}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color11' ">{{item.number | showTime04}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color11' ">{{item.number | showTime05}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color11' ">{{item.number | showTime06}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color11' ">{{item.number | showTime07}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color11' ">{{item.number | showTime08}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color11' ">{{item.number | showTime09}}</span></td>
 	            	</tr>
 	            	
 	            </table>
+
 	         </div> 
+	         <ul class="data_fenxi" id="data_fenxi">
+	         	<li class="lls lls1">
+	         		<ol>
+	         			<li class="fist">出现次数</li>
+	         			<li id="data_li1"></li>
+	         			<li id="data_li2"></li>
+	         			<li id="data_li3"></li>
+	         			<li id="data_li4"></li>
+	         			<li id="data_li5"></li>
+	         			<li id="data_li6"></li>
+	         			<li id="data_li7"></li>
+	         			<li id="data_li8"></li>
+	         			<li id="data_li9"></li>
+	         			<li id="data_li10" ></li>
+	         		</ol>
+	         	</li>
+	         	<li class="lls lls2">
+	         		<ol>
+	         			<li class="fist">平均遗漏</li>
+	         			<li id="data_yi1"></li>
+	         			<li>7</li>
+	         			<li>5</li>
+	         			<li>9</li>
+	         			<li>6</li>
+	         			<li>6</li>
+	         			<li>8</li>
+	         			<li>5</li>
+	         			<li>8</li>
+	         			<li>7</li>
+	         		</ol>
+	         	</li>
+	         	<li class="lls lls3">
+	         		<ol>
+	         			<li class="fist">最大遗漏</li>
+	         			<li>8</li>
+	         			<li>8</li>
+	         			<li>7</li>
+	         			<li>4</li>
+	         			<li>9</li>
+	         			<li>8</li>
+	         			<li>4</li>
+	         			<li>6</li>
+	         			<li>12</li>
+	         			<li>34</li>
+	         		</ol>
+	         	</li>
+	         	<li class="lls lls4">
+	         		<ol>
+	         			<li class="fist">最大连出</li>
+	         			<li>5</li>
+	         			<li>8</li>
+	         			<li>6</li>
+	         			<li>15</li>
+	         			<li>11</li>
+	         			<li>9</li>
+	         			<li>6</li>
+	         			<li>10</li>
+	         			<li>7</li>
+	         			<li>8</li>
+	         		</ol>
+	         	</li>
+	         </ul>
 	    </div>
 
 	    <!--走势图蒙版-->
@@ -222,8 +291,8 @@
 				 	</ul>
 				 </div>
 				 <div id="tijiao">
-				<button id="popWindow" class="reset" onclick="closeDiv()"/>取消</button>
-				<button class="sures" onclick="showWindow()"/ >提交</button>
+				<button id="popWindow" class="reset" onclick="closeMassge()"/>取消</button>
+				<button class="sures" onclick="closeDiv()"/ >确定</button>
 			</div>
 			</div>
 		</div>

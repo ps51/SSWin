@@ -1,90 +1,145 @@
 {
-	"index.html": {
-		"resources": [
-			"css/index.css",
-			"js/common.js",
-			"css/common.css"
-		],
-		"refer": []
-	},
-	"pic_zoushi.html": {
-		"resources": [
-			"img/massage/shezhi.png",
-			"img/massage/back.png",
-			"css/pic_zoushi.css",
-			"js/vue.js",
-			"css/common.css",
-			"css/data_show.css",
-			"js/pic__zoushi.js",
-			"js/showmassage.js",
-			"js/jquery-3.1.1.min.js",
-			"img/help.png",
-			"pic_shishicai.html",
-			"img/common/arrow2-æ‹·è´-2@3x.png",
-			"js/kuaisan_vue.js",
-			"img/massage/è®¾ç½®-@3x.png",
-			"img/massage/å¸®åŠ©@3x.png",
-			"img/massage/é€‰ä¸­@3x.png",
-			"img/massage/design3x.png",
-			"img/massage/help3x.png",
-			"img/common/arrow3x.png",
-			"img/massage/checked3x.png"
-		],
-		"refer": [
-			"pic_shishicai.html"
-		]
-	},
-	"massage_help.html": {
-		"resources": [
-			"img/back.png",
-			"css/helps.css",
-			"img/common/arrow2-æ‹·è´-2@3x.png"
-		]
-	},
-	"pic_shishicai.html": {
-		"resources": [
-			"pic_pk10.html",
-			"pic_zoushi.html",
-			"img/common/arrow2-æ‹·è´-2@3x.png",
-			"js/shishicai_vue.js",
-			"img/massage/è®¾ç½®-@3x.png",
-			"img/massage/å¸®åŠ©@3x.png",
-			"img/massage/é€‰ä¸­@3x.png",
-			"js/showmassage.js",
-			"js/jquery-3.1.1.min.js",
-			"css/pic_zoushi.css",
-			"js/vue.js",
-			"css/common.css",
-			"css/data_show.css",
-			"js/pic__zoushi.js",
-			"img/massage/design3x.png",
-			"img/massage/help3x.png",
-			"img/common/arrow3x.png"
-		],
-		"refer": [
-			"pic_pk10.html",
-			"pic_zoushi.html"
-		]
-	},
-	"pic_pk10.html": {
-		"resources": [
-			"img/common/arrow2-æ‹·è´-2@3x.png",
-			"img/massage/é€‰ä¸­@3x.png",
-			"img/massage/è®¾ç½®-@3x.png",
-			"img/massage/å¸®åŠ©@3x.png",
-			"pic_zoushi.html",
-			"pic_shishicai.html"
-		],
-		"refer": [
-			"pic_zoushi.html",
-			"pic_shishicai.html"
-		]
-	},
-	"massage_cqshishicai.html": {
-		"resources": [
-			"img/common/arrow2-æ‹·è´-2@3x.png",
-			"css/helps.css",
-			"img/common/arrow3x.png"
-		]
-	}
+  "index.html": {
+    "resources": [
+      "css/index.css",
+      "js/common.js",
+      "css/common.css"
+    ],
+    "refer": []
+  },
+  "pic_zoushi.html": {
+    "resources": [
+      "img/massage/shezhi.png",
+      "img/massage/back.png",
+      "css/pic_zoushi.css",
+      "js/vue.js",
+      "css/common.css",
+      "css/data_show.css",
+      "js/pic__zoushi.js",
+      "js/showmassage.js",
+      "js/jquery-3.1.1.min.js",
+      "img/help.png",
+      "pic_shishicai.html",
+      "img/common/arrow2-ı\u001d-2@3x.png",
+      "js/kuaisan_vue.js",
+      "img/massage/ın-@3x.png",
+      "img/massage/.ı@3x.png",
+      "img/massage/\t-@3x.png",
+      "img/massage/design3x.png",
+      "img/massage/help3x.png",
+      "img/common/arrow3x.png",
+      "img/massage/checked3x.png",
+      "img/common/arrow2-ı\u001d-2@3x.png",
+      "img/massage/ın-@3x.png",
+      "img/massage/.ı@3x.png",
+      "img/massage/\t-@3x.png"
+    ],
+    "refer": [
+      "pic_shishicai.html"
+    ]
+  },
+  "massage_help.html": {
+    "resources": [
+      "img/back.png",
+      "css/helps.css",
+      "img/common/arrow2-ı\u001d-2@3x.png",
+      "img/common/arrow2-ı\u001d-2@3x.png"
+    ],
+    "refer": []
+  },
+  "pic_shishicai.html": {
+    "resources": [
+      "pic_pk10.html",
+      "pic_zoushi.html",
+      "img/common/arrow2-ı\u001d-2@3x.png",
+      "js/shishicai_vue.js",
+      "img/massage/ın-@3x.png",
+      "img/massage/.ı@3x.png",
+      "img/massage/\t-@3x.png",
+      "js/showmassage.js",
+      "js/jquery-3.1.1.min.js",
+      "css/pic_zoushi.css",
+      "js/vue.js",
+      "css/common.css",
+      "css/data_show.css",
+      "js/pic__zoushi.js",
+      "img/massage/design3x.png",
+      "img/massage/help3x.png",
+      "img/common/arrow3x.png",
+      "img/common/arrow2-ı\u001d-2@3x.png",
+      "img/massage/ın-@3x.png",
+      "img/massage/.ı@3x.png",
+      "img/massage/\t-@3x.png"
+    ],
+    "refer": [
+      "pic_pk10.html",
+      "pic_zoushi.html"
+    ]
+  },
+  "pic_pk10.html": {
+    "resources": [
+      "img/common/arrow2-ı\u001d-2@3x.png",
+      "img/massage/\t-@3x.png",
+      "img/massage/ın-@3x.png",
+      "img/massage/.ı@3x.png",
+      "pic_zoushi.html",
+      "pic_shishicai.html",
+      "img/common/arrow2-ı\u001d-2@3x.png",
+      "img/massage/\t-@3x.png",
+      "img/massage/ın-@3x.png",
+      "img/massage/.ı@3x.png"
+    ],
+    "refer": [
+      "pic_zoushi.html",
+      "pic_shishicai.html"
+    ]
+  },
+  "massage_cqshishicai.html": {
+    "resources": [
+      "img/common/arrow2-ı\u001d-2@3x.png",
+      "css/helps.css",
+      "img/common/arrow3x.png",
+      "img/common/arrow2-ı\u001d-2@3x.png"
+    ],
+    "refer": []
+  },
+  "shishicai_find.html": {
+    "resources": [
+      "css/shishicai_zhuihao.css",
+      "js/showmassage.js",
+      "js/shishicai_find.js",
+      "js/jquery-3.1.1.min.js",
+      "css/common.css",
+      "img/common/arrow3x.png",
+      "img/gray_help.png",
+      "js/huadong.js",
+      "img/massage/checked3x.png",
+      "bjpk10_find.html",
+      "jsks_find.html",
+      "img/massage/bg_small.png",
+      "img/massage/up3x.png",
+      "img/massage/down.png",
+      "js/data_refish.js"
+    ],
+    "refer": []
+  },
+  "bjpk10_find.html": {
+    "resources": [
+      "shishicai_find.html",
+      "jsks_find.html",
+      "js/pk10_find.js"
+    ],
+    "refer": [
+      "shishicai_find.html"
+    ]
+  },
+  "jsks_find.html": {
+    "resources": [
+      "shishicai_find.html",
+      "js/jsks_find.js"
+    ],
+    "refer": [
+      "shishicai_find.html"
+    ]
+  }
 }
