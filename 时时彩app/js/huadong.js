@@ -69,9 +69,9 @@ function touchend(event){
         else{
             for(var i=0;i < imgLen;i++){
                 $car_img.eq(i).animate({"left":windowWidth*(i-(thisIndex+1))},300);
-                // $carousel_icon.eq(i).addClass("carousel_icon2").removeClass("carousel_icon1");
+               
             }
-            // $carousel_icon.eq(thisIndex+1).removeClass("carousel_icon2").addClass("carousel_icon1");
+        
         }
         
     }
@@ -87,9 +87,9 @@ function touchend(event){
         else{
             for(var i=0;i < imgLen;i++){
                 $car_img.eq(i).animate({"left":windowWidth*(i-(thisIndex-1))},300);
-                // $carousel_icon.eq(i).addClass("carousel_icon2").removeClass("carousel_icon1");
+              
             }
-            // $carousel_icon.eq(thisIndex-1).removeClass("carousel_icon2").addClass("carousel_icon1");
+            
         }
     }
     //当滑动距离在大于-32px并且小于32px时，当前轮播图位置不变
@@ -99,11 +99,3 @@ function touchend(event){
         }
     }
 }
-
-
-$(".car_img .ones a").each(function(){
-    $(this).click(function(){
-
-           $(this).addClass("colors_red").siblings().removeClass("colors_red")
-    })
-})

@@ -15,7 +15,7 @@
         slideDown1.style.height = "20px"; 
         slideDown2.style.display = "block"; 
         //刷新数据 
-        // location.reload(); 
+        location.reload(); 
     } 
     //第三步：刷新完成，回归之前状态 
     function slideDownStep3(){  
@@ -46,6 +46,7 @@
                 _start = touch.pageX; 
             }else{  
                 _start = touch.pageY; 
+                
             } 
         } 
         function touchMove(event){  
@@ -71,7 +72,8 @@
                 //模拟刷新成功进入第三步 
                 setTimeout(function(){  
                     slideDownStep3(); 
-                },3000); 
+                },2000); 
             } 
         } 
+
     } 

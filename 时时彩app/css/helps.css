@@ -19,22 +19,21 @@
 }
 .tops span{
 	display: inline-block;
-	padding:0.1rem 1rem;
+	padding:0rem 1rem;
 	float: left;
 }
 .tops span img{
-	padding-top:.4rem;
+	padding-top:.6rem;
 	width:1rem;
 	height:auto;
 }
 .tops span.helps{
-	width: 60%;
+	width: 70%;
 	height:100%;
 	font-size:1rem;
 	font-weight: bold;
 	line-height: 3rem;
 	text-align: center;
-	text-indent: -2rem;
 }
 .centers{
 	width:100%;

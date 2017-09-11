@@ -327,6 +327,33 @@
 				],
 				"refer": [],
 				"priority": 0
+			},
+			"tuiguang_Sharing.html": {
+				"resources": [
+					"img/massage/juxing-3@2x.png",
+					"img/massage/friends.png",
+					"img/massage/go.png",
+					"img/massage/sanji_11.png",
+					"img/massage/bg_red.png",
+					"img/massage/yijie.png",
+					"img/massage/qq.png",
+					"img/massage/sanji.png",
+					"img/massage/win.png",
+					"img/massage/back.png",
+					"js/jquery-3.1.1.min.js",
+					"img/massage/quxiao.png",
+					"css/common.css",
+					"img/massage/pic_1.png",
+					"img/massage/chixu.png",
+					"img/massage/yaoqing.png",
+					"img/massage/weibo.png",
+					"img/massage/erjie.png",
+					"css/tuiguang.css",
+					"img/massage/zhushou.png",
+					"img/massage/weixin.png"
+				],
+				"refer": [],
+				"priority": 0
 			}
 		},
 		"idle": {

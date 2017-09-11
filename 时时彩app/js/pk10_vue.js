@@ -241,6 +241,9 @@ created:function(){
 		if (xhr.readyState==4) {	
 			that.data=eval('(' + xhr.responseText + ')');//转换json
             that.data= that.data.datas.slice(0,30);
+
+             data_jiequ();//显示数据总分析
+            function data_jiequ(){
             var data= that.data;
             var ss0=0,ss1=0,ss2=0,ss3=0,ss4=0,ss5=0,ss6=0,ss7=0,ss8=0,ss9=0;
 
@@ -346,6 +349,7 @@ created:function(){
               }
                $("#data_li10").text(ss9);
             }
+          }
 		}
 	}
 	xhr.open("post","http://47.94.140.92:8080/JDLot/type/pk10/alllist",true);
@@ -360,7 +364,114 @@ created:function(){
         if (xhr.readyState==4) {    
             that.data=eval('(' + xhr.responseText + ')');//转换json
             that.data= that.data.datas.slice(0,30);
+             data_jiequ();//显示数据总分析
+            function data_jiequ(){
+            var data= that.data;
+            var ss0=0,ss1=0,ss2=0,ss3=0,ss4=0,ss5=0,ss6=0,ss7=0,ss8=0,ss9=0;
 
+            var a=0;//遗漏值
+
+            for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==1) {
+                  ss0++;
+                }
+               
+                $("#data_yi1").text(a);//遗漏显示
+              }
+               $("#data_li1").text(ss0);//1初选的次数之和
+               
+            }
+             for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==2) {
+                  ss1++;
+                }
+              }
+               $("#data_li2").text(ss1);
+            }
+
+            for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==3) {
+                  ss2++;
+                }
+              }
+               $("#data_li3").text(ss2);
+            }
+
+             for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==4) {
+                  ss3++;
+                }
+              }
+               $("#data_li4").text(ss3);
+            }
+             for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==5) {
+                  ss4++;
+                }
+              }
+               $("#data_li5").text(ss4);
+            }
+
+            for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==6) {
+                  ss5++;
+                }
+              }
+               $("#data_li6").text(ss5);
+            }
+
+
+            for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==7) {
+                  ss6++;
+                }
+              }
+               $("#data_li7").text(ss6);
+            }
+
+             for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==8) {
+                  ss7++;
+                }
+              }
+               $("#data_li8").text(ss7);
+            }
+             for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==9) {
+                  ss8++;
+                }
+              }
+               $("#data_li9").text(ss8);
+            }
+
+            for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==10) {
+                  ss9++;
+                }
+              }
+               $("#data_li10").text(ss9);
+            }
+          }
         }
     }
     xhr.open("post","http://47.94.140.92:8080/JDLot/type/pk10/alllist",true);
@@ -374,6 +485,114 @@ created:function(){
         if (xhr.readyState==4) {    
             that.data=eval('(' + xhr.responseText + ')');//转换json
             that.data= that.data.datas.slice(0,50);
+             data_jiequ();//显示数据总分析
+            function data_jiequ(){
+            var data= that.data;
+            var ss0=0,ss1=0,ss2=0,ss3=0,ss4=0,ss5=0,ss6=0,ss7=0,ss8=0,ss9=0;
+
+            var a=0;//遗漏值
+
+            for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==1) {
+                  ss0++;
+                }
+               
+                $("#data_yi1").text(a);//遗漏显示
+              }
+               $("#data_li1").text(ss0);//1初选的次数之和
+               
+            }
+             for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==2) {
+                  ss1++;
+                }
+              }
+               $("#data_li2").text(ss1);
+            }
+
+            for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==3) {
+                  ss2++;
+                }
+              }
+               $("#data_li3").text(ss2);
+            }
+
+             for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==4) {
+                  ss3++;
+                }
+              }
+               $("#data_li4").text(ss3);
+            }
+             for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==5) {
+                  ss4++;
+                }
+              }
+               $("#data_li5").text(ss4);
+            }
+
+            for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==6) {
+                  ss5++;
+                }
+              }
+               $("#data_li6").text(ss5);
+            }
+
+
+            for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==7) {
+                  ss6++;
+                }
+              }
+               $("#data_li7").text(ss6);
+            }
+
+             for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==8) {
+                  ss7++;
+                }
+              }
+               $("#data_li8").text(ss7);
+            }
+             for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==9) {
+                  ss8++;
+                }
+              }
+               $("#data_li9").text(ss8);
+            }
+
+            for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==10) {
+                  ss9++;
+                }
+              }
+               $("#data_li10").text(ss9);
+            }
+          }
         }
     }
     xhr.open("post","http://47.94.140.92:8080/JDLot/type/pk10/alllist",true);
@@ -387,6 +606,114 @@ created:function(){
         if (xhr.readyState==4) {    
             that.data=eval('(' + xhr.responseText + ')');//转换json
             that.data= that.data.datas.slice(0,100);
+             data_jiequ();//显示数据总分析
+            function data_jiequ(){
+            var data= that.data;
+            var ss0=0,ss1=0,ss2=0,ss3=0,ss4=0,ss5=0,ss6=0,ss7=0,ss8=0,ss9=0;
+
+            var a=0;//遗漏值
+
+            for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==1) {
+                  ss0++;
+                }
+               
+                $("#data_yi1").text(a);//遗漏显示
+              }
+               $("#data_li1").text(ss0);//1初选的次数之和
+               
+            }
+             for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==2) {
+                  ss1++;
+                }
+              }
+               $("#data_li2").text(ss1);
+            }
+
+            for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==3) {
+                  ss2++;
+                }
+              }
+               $("#data_li3").text(ss2);
+            }
+
+             for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==4) {
+                  ss3++;
+                }
+              }
+               $("#data_li4").text(ss3);
+            }
+             for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==5) {
+                  ss4++;
+                }
+              }
+               $("#data_li5").text(ss4);
+            }
+
+            for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==6) {
+                  ss5++;
+                }
+              }
+               $("#data_li6").text(ss5);
+            }
+
+
+            for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==7) {
+                  ss6++;
+                }
+              }
+               $("#data_li7").text(ss6);
+            }
+
+             for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==8) {
+                  ss7++;
+                }
+              }
+               $("#data_li8").text(ss7);
+            }
+             for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==9) {
+                  ss8++;
+                }
+              }
+               $("#data_li9").text(ss8);
+            }
+
+            for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==10) {
+                  ss9++;
+                }
+              }
+               $("#data_li10").text(ss9);
+            }
+          }
         }
     }
     xhr.open("post","http://47.94.140.92:8080/JDLot/type/pk10/alllist",true);
@@ -400,6 +727,114 @@ created:function(){
         if (xhr.readyState==4) {    
             that.data=eval('(' + xhr.responseText + ')');//转换json
             that.data= that.data.datas.slice(0,200);
+             data_jiequ();//显示数据总分析
+            function data_jiequ(){
+            var data= that.data;
+            var ss0=0,ss1=0,ss2=0,ss3=0,ss4=0,ss5=0,ss6=0,ss7=0,ss8=0,ss9=0;
+
+            var a=0;//遗漏值
+
+            for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==1) {
+                  ss0++;
+                }
+               
+                $("#data_yi1").text(a);//遗漏显示
+              }
+               $("#data_li1").text(ss0);//1初选的次数之和
+               
+            }
+             for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==2) {
+                  ss1++;
+                }
+              }
+               $("#data_li2").text(ss1);
+            }
+
+            for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==3) {
+                  ss2++;
+                }
+              }
+               $("#data_li3").text(ss2);
+            }
+
+             for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==4) {
+                  ss3++;
+                }
+              }
+               $("#data_li4").text(ss3);
+            }
+             for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==5) {
+                  ss4++;
+                }
+              }
+               $("#data_li5").text(ss4);
+            }
+
+            for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==6) {
+                  ss5++;
+                }
+              }
+               $("#data_li6").text(ss5);
+            }
+
+
+            for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==7) {
+                  ss6++;
+                }
+              }
+               $("#data_li7").text(ss6);
+            }
+
+             for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==8) {
+                  ss7++;
+                }
+              }
+               $("#data_li8").text(ss7);
+            }
+             for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==9) {
+                  ss8++;
+                }
+              }
+               $("#data_li9").text(ss8);
+            }
+
+            for (var i = 0; i < data.length; i++) {
+              var bbd=(data[i].number.split(",")).slice(0,3);
+              for (var j = 0; j < bbd.length; j++) {
+                if (bbd[j]==10) {
+                  ss9++;
+                }
+              }
+               $("#data_li10").text(ss9);
+            }
+          }
         }
     }
     xhr.open("post","http://47.94.140.92:8080/JDLot/type/pk10/alllist",true);

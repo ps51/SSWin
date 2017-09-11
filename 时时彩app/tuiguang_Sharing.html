@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>		
+		<title>推广分享</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, 
+		minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/tuiguang.css"/>
+</head>
+<body>
+<!-- 头部开始 -->
+<div class="header">
+	<div class="pic_set">
+			<!--返回上一页开始-->
+			<div class="back">
+					<a class="back_pre" href="#" onClick="javascript:history.go(-1);" alt="推广"></a>
+			</div>
+			<p class="tuisong">
+					<span class="hh1">推广分享</span>
+			</p>
+			<div class="wanshan">
+					<a class="massage" href="#">完善资料</a>
+			</div>
+			<!--返回上一页结束-->
+	</div>
+</div>
+<!-- 头部结束 -->
+<!-- 邀请码开始 -->
+<div class="yaoqingma">
+	<div class="yaoqing">
+		<script type="text/javascript">
+			//复制张贴JS代码
+			  function copyUrl2()
+			  {
+			  var Url2=document.getElementById("biao1");
+			  Url2.select(); // 选择对象
+			  document.execCommand("Copy"); // 执行浏览器复制命令
+			  // alert("已复制好,可贴粘");
+			  }
+		</script>
+		 <p class="bg_yao">邀请码</p>
+		 <input type="text" id="biao1" value="444444">
+		 <input type="button" onClick="copyUrl2()" class="fuzhi" value="点击复制代码" style="background-color: orange;border-radius: 5px"/>
+		 <div class="go_yaoqing">
+		 	<span>去邀请</span>
+		 	<a href="#" class="show"><img src="img/massage/go.png"></a><!-- 控制蒙版显示 -->
+		 </div>
+	</div>
+</div>
+<!-- 邀请码结束 -->
+<!-- 中间介绍开始 -->
+<center>
+	<div class="pic_1">
+		<img src="img/massage/yijie.png"/>
+		<img src="img/massage/pic_1.png"/>
+		<img src="img/massage/sanji.png"/>
+		<img src="img/massage/sanji_11.png"/>
+		<img src="img/massage/erjie.png"/>
+		<img src="img/massage/quxiao.png"/>
+		<img src="img/massage/chixu.png"/>
+		<img src="img/massage/zhushou.png"/>
+		<img src="img/massage/win.png"/>
+	</div>
+</center>
+<!-- 中间介绍结束 -->
+
+<!-- 蒙版开始 -->
+<div class="meng bdsharebuttonbox">
+<!-- 分享功能开始 -->
+	<ul >
+		<li><a href="#"><img data-cmd="weixin" src="img/massage/weixin.png"><p>微信好友</p></a></li>
+		<li><a href="#"><img  data-cmd="qzone" src="img/massage/friends.png"><p>qq空间</p></a></li>
+		<li><a href="http://www.oschina.net/question/1430945_159319"><img data-cmd="sqq" src="img/massage/qq.png"><p>QQ好友</p></a></li>
+		<li><a href="#"><img data-cmd="tsina" src="img/massage/weibo.png"><p>微博</p></a></li>
+		<p class="guanbi">取消</p>
+	</ul>
+<!-- 分享功能结束 -->
+</div>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script>
+			window._bd_share_config={//分享js代码
+				"common":{
+					"bdSnsKey":{},
+					"bdText":"",
+					"bdMini":"1",
+					"bdMiniList":[
+					"weixin",
+					"qzone",
+					"sqq",
+					"tsina"],
+					"bdPic":"",
+					"bdStyle":"0",
+					"bdSize":"16"},
+					"share":{}
+				};
+				with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+// var imgUrl = "http://www.baidu.com/img/bdlogo.gif";
+// var lineLink = "http://www.baidu.com";
+// var descContent = '分享到朋友圈';
+// var shareTitle = '标题';
+// var appid ="";
+// function shareFriend() {
+//     WeixinJSBridge.invoke('sendAppMessage',{
+//         "appid": appid,
+//         "img_url": imgUrl,
+//         "img_width": "200",
+//         "img_height": "200",
+//         "link": lineLink,
+//         "desc": descContent,
+//         "title": shareTitle
+//     }, function(res) {
+//     	alert(1)
+//     })
+// }
+// function shareTimeline() {
+//     WeixinJSBridge.invoke('shareTimeline',{
+//         "img_url": imgUrl,
+//         "img_width": "200",
+//         "img_height": "200",
+//         "link": lineLink,
+//         "desc": descContent,
+//         "title": shareTitle
+//     }, function(res) {
+//     	alert(1)
+//     });
+// }
+// function shareWeibo() {
+//     WeixinJSBridge.invoke('shareWeibo',{
+//         "content": descContent,
+//         "url": lineLink,
+//     }, function(res) {
+//     	alert(1)
+//     });
+
+// }
+// // 当微信内置浏览器完成内部初始化后会触发WeixinJSBridgeReady事件。
+// document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+//     // 发送给好友
+//     WeixinJSBridge.on('menu:share:appmessage', function(argv){
+//         shareFriend();
+//     });
+//     // 分享到朋友圈
+//     WeixinJSBridge.on('menu:share:timeline', function(argv){
+
+//         shareTimeline();
+
+//     });
+
+//     // 分享到微博
+//     WeixinJSBridge.on('menu:share:weibo', function(argv){
+//         shareWeibo();
+//     });
+// }, false);
+</script>
+<script type="text/javascript">
+    $("#biao1").val(parseInt(Math.random()*10000+1000))
+	$(".show").click(function(){
+		$(".meng").show()
+	})
+	$(".guanbi").click(function(){
+		$(".meng").hide()
+	})
+</script>
+<!-- 蒙版结束 -->
+</body>
+</html>
