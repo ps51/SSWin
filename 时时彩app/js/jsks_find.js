@@ -1,7 +1,7 @@
 $(function(){
          $.ajax({
              type: "post",
-             url: "http://47.94.140.92:8080/JDLot/type/cqssc/alllist",
+             url: "http://47.94.140.92:8080/JDLot/type/jsks/list",
              data: {"PageNum":1,"PageSize":"10"},
              dataType: "json",
              success: function(data){

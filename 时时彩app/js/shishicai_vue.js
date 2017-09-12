@@ -81,70 +81,71 @@
 //         后三位奖好处理
         Vue.filter("shows9", function(value) {   //0是否出现
         	var reg = /([0]){1,}/;
-             value=value.substring(2)
+             value=value.substring(3)
              // console.log(value)
              if(reg.test(value)==true){
                return 0
              } 
         });
         Vue.filter("shows", function(value) {   //1是否出现
-        	value=value.slice(2,4);
+        	value=value.slice(2,5);
+          console.log(value.length)
         	var reg = /([1]){1,}/;
              if(reg.test(value)==true){
              	return 1
              } 
         });
         Vue.filter("shows1", function(value) {   //2是否出现
-       value=value.slice(2,4);
+       value=value.slice(2,5);
         	var reg = /([2]){1,}/;
              if(reg.test(value)==true){
              	return 2
              } 
         });
         Vue.filter("shows2", function(value) {   //3是否出现
-        	value=value.slice(2,4);
+        	value=value.slice(2,5);
         	var reg = /([3]){1,}/;
              if(reg.test(value)==true){
                      return 3;
              } 
         });
         Vue.filter("shows3", function(value) {   //4是否出现
-        	value=value.slice(2,4);
+        	value=value.slice(2,5);
         	var reg = /([4]){1,}/;
              if(reg.test(value)==true){
              	return 4
              } 
         });
         Vue.filter("shows4", function(value) {   //5是否出现
-        	value=value.slice(2,4);
+        	value=value.slice(2,5);
         	var reg = /([5]){1,}/;
              if(reg.test(value)==true){
              	return 5
              } 
         });
         Vue.filter("shows5", function(value) {   //6是否出现
-        	value=value.slice(2,4);
+        	value=value.slice(2,5);
         	var reg = /([6]){1,}/;
              if(reg.test(value)==true){
              	return 6
              } 
         });
          Vue.filter("shows6", function(value) {//7是否出现
-         	value=value.slice(2,4);
+         	value=value.slice(2,5);
          var reg = /([7]){1,}/;
              if(reg.test(value)==true){
                return 7
              } 
         });
           Vue.filter("shows7", function(value) {   //8是否出现
-          	value=value.slice(2,4);
+          	value=value.slice(2,5);
          var reg = /([8]){1,}/;
              if(reg.test(value)==true){
                return 8
              } 
         });
         Vue.filter("shows8", function(value) {   //9是否出现
-        	value=value.slice(2,4);
+        	value=value.slice(2,5);
          var reg = /([9]){1,}/;
              if(reg.test(value)==true){
                return 9
@@ -167,21 +168,21 @@
             })
           
            Vue.filter("sames2", function(value) {//三个数字相同------豹子
-         	value=value.slice(2,4);
+         	value=value.slice(2,5);
              if(parseInt(value.substring(0,1))==parseInt(value.substring(1,2)) && parseInt(value.substring(0,1))==parseInt(value.substring(2,3))&& parseInt(value.substring(2,3))==parseInt(value.substring(1,2))){
 //              	var aa=parseInt(value.substring(0,1))+parseInt(value.substring(1,2))+parseInt(value.substring(2,3));
              return  value="豹子"			
              }
          })
           Vue.filter("sames3", function(value) {//三个数字相同------豹子
-         	value=value.slice(2,4);
+         	value=value.slice(2,5);
              if(parseInt(value.substring(0,1))==parseInt(value.substring(1,2)) || parseInt(value.substring(0,1))==parseInt(value.substring(2,3))||parseInt(value.substring(2,3))==parseInt(value.substring(1,2))){
 //              	var aa=parseInt(value.substring(0,1))+parseInt(value.substring(1,2))+parseInt(value.substring(2,3));
              return  value="组三"			
              }
          })
            Vue.filter("dissame1", function(value) {//三个数字不同相同------组六
-         	value=value.slice(2,4);
+         	value=value.slice(2,5);
              if(parseInt(value.substring(0,1))!=parseInt(value.substring(1,2)) && parseInt(value.substring(0,1))!=parseInt(value.substring(2,3))&&parseInt(value.substring(2,3))!=parseInt(value.substring(1,2))){
 //              	var aa=parseInt(value.substring(0,1))+parseInt(value.substring(1,2))+parseInt(value.substring(2,3));
              return  value="组六"			

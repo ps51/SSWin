@@ -70,7 +70,6 @@
                 if(parseInt(value.substring(0,1))==parseInt(value.substring(1,2)) || parseInt(value.substring(0,1))==parseInt(value.substring(2,3))|| parseInt(value.substring(2,3))==parseInt(value.substring(1,2))){
 //              	var aa=parseInt(value.substring(0,1))+parseInt(value.substring(1,2))+parseInt(value.substring(2,3));
                 return  value="二同"
-                	return
                 }
                
             });
@@ -143,6 +142,7 @@
 				if (xhr.readyState==4) {	
 					that.data=eval('(' + xhr.responseText + ')');//转换json
                     that.data= that.data.datas.slice(0,30);
+                    
 				}
 			}
 			xhr.open("post","http://47.94.140.92:8080/JDLot/type/jsks/alllist",true);
@@ -161,7 +161,7 @@
             }
             xhr.open("post","http://47.94.140.92:8080/JDLot/type/jsks/alllist",true);
             xhr.setRequestHeader("Content-Type","application/json");//设置请求头
-            xhr.send("PageNum=2&PageSize=220");
+            xhr.send("PageNum=1&PageSize=30");
                     },
                   dianji1: function (){ 
                         var that=this;
@@ -174,7 +174,7 @@
             }
             xhr.open("post","http://47.94.140.92:8080/JDLot/type/jsks/alllist",true);
             xhr.setRequestHeader("Content-Type","application/json");//设置请求头
-            xhr.send("PageNum=2&PageSize=220");
+            xhr.send("PageNum=1&PageSize=50");
                     },
                   dianji2:  function (){ 
                         var that=this;
@@ -187,7 +187,7 @@
             }
             xhr.open("post","http://47.94.140.92:8080/JDLot/type/jsks/alllist",true);
             xhr.setRequestHeader("Content-Type","application/json");//设置请求头
-            xhr.send("PageNum=2&PageSize=220");
+            xhr.send("PageNum=1&PageSize=100");
                     },
                    dianji3: function (){ 
                       var that=this;
