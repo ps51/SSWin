@@ -8,43 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" type="text/css" href="css/pic_zoushi.css"/>
 		<link rel="stylesheet" href="css/data_show.css" />
-		<style>
-    *{
-        margin:0;
-        padding:0;
-    }
-        table { 
-            width:100%;
-            border: 0;
-             margin: 0;
-              border-collapse: collapse;
-               border-spacing: 0;
-                font-size: 1rem;
-                 font-family: Arial; margin: 0 auto;
-                  }
-        table td, table th {
-         padding: 0;
-          border: 1px solid #d8d8d8;
-           height: 12%;
-            width: 8.3%;
-             text-align: center; color: #666; }
-        table th { font-weight: bold; color: #000;font-size: 0.5rem }
-        .colors{
-            display: inline-block;
-            width:60%;
-            height:100%;
-            padding:5px 4px;
-            line-height: 1rem;
-            border-radius: 50%;
-        }
-        #canvasdiv{
-        	width:100%;
-        	height:1000px;
-        	position: absolute;
-        	top:0;
-            /*display: none;*/
-        }
-    </style>
+		<style></style>
 		<script type="text/javascript">
 	function showD() { 
 		document.getElementById('popWindow').style.display = 'block'; 
@@ -101,9 +65,10 @@
 	        <li><a href="#" class="">分类和值走势图</a></li>
 	    </ul>
 <!--二级菜单-->
+
 <div id="app">
 	    <div id="menu_con">
-	        <div class="tag" style="display:block" >
+	        <div class="tag" style="display:none;" >
 	        	<!--数据展示开始-->
 	             <table class="app" >
 	            	<tr class="trss">
@@ -135,18 +100,46 @@
 	            </table>
 	           
 	         </div> 
-	        <div class="tag" style="display:none">
-	            <table class="app" id="zstable">
-		            <thead></thead>
-		            <tbody></tbody>
-		            <p id="canvasdiv" class="canvasdiv"></p>
+	        <div class="tag" style="display:block;">  
+ <table class="app" >
+	            	<tr class="trss">
+	            		<th class="th_4">期号</th>
+	            		<th class="th_4">奖号</th>
+	            		<th>和值</th>
+	            		<th>3/18</th>
+	            		<th>4/17</th>
+	            		<th>5/16</th>
+	            		<th>6/15</th>
+	            		<th>7/14</th>
+	            	    <th>8/13</th>
+	            		<th>9/12</th>
+	            		<th>10/11</th>
+	            	</tr>
+	            	<tr v-for="item in data" class="trss" id="tress" v-cloak>
+	            		<td>{{item.period | jiequ}}</td>
+	            		<td style="color:#D91D37">{{item.number}}</td>
+	            		<td><span>{{item.number | sum}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime1}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime2}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime3}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime4}}</span></td>
+	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime5}}</span></td>
+	            		<td><span  class="changches ertong">{{item.number | sum0}}</span></td>
+	            		<td><span  class="changches santong">{{item.number | sum01}}</span></td>
+	            		<td><span   class="changches">{{item.number | sum02}}</span></td>
+	            	</tr>	    
 	            </table>
-	             
-        
-        <p class="ssss">显示</p>
-        
+
 	      </div> 
-	    </div>
+
+	    </div> 
+     <div>
+	    <table class="app" id="zstable">
+            <thead></thead>
+            <tbody></tbody>  
+        </table>
+        <div id="canvasdiv" class="canvasdiv"></div>
+	   	</div>
 	    <!--走势图蒙版-->
 		<div class="show_top" id="maskLayer" style="display:none">
 			<!--中间部分-->
@@ -234,8 +227,8 @@
 				 	</ul>
 				 </div>
 				 <div id="tijiao">
-				<!-- <button id="popWindow" class="reset" onclick="closeDiv()"/>取消</button>
-				<button class="sures" onclick="showWindow()"/ >提交</button> -->
+				<button id="popWindow" class="reset" onclick="closeDiv()"/>取消</button>
+				<button class="sures" onclick="showWindow()"/ >确定</button>
 			</div>
 			</div>
 		</div>
@@ -254,8 +247,11 @@
 		<script src="js/kuaisan_vue.js"></script>
 		<script type="text/javascript" src="js/line.js"></script>
 		<script type="text/javascript">
-            $(".ssss").click(function(){
-              $(".canvasdiv").toggle()
+            $("#inputs5").click(function(){
+              $(".canvasdiv").show()
+})
+                  $("#inputs6").click(function(){
+              $(".canvasdiv").hide()
 })
         </script>
 </body>

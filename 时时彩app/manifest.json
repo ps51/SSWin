@@ -306,7 +306,8 @@
 					"img/massage/bg_small.png",
 					"img/massage/up3x.png",
 					"img/massage/down.png",
-					"js/data_refish.js"
+					"js/data_refish.js",
+					"zhuihao_ssc_help.html"
 				],
 				"refer": [],
 				"priority": 0
@@ -315,7 +316,8 @@
 				"resources": [
 					"shishicai_find.html",
 					"jsks_find.html",
-					"js/pk10_find.js"
+					"js/pk10_find.js",
+					"zhuihao_pk10_help.html"
 				],
 				"refer": [],
 				"priority": 0
@@ -323,7 +325,8 @@
 			"jsks_find.html": {
 				"resources": [
 					"shishicai_find.html",
-					"js/jsks_find.js"
+					"js/jsks_find.js",
+					"zhuihao_jsks_help.html"
 				],
 				"refer": [],
 				"priority": 0
@@ -351,6 +354,29 @@
 					"css/tuiguang.css",
 					"img/massage/zhushou.png",
 					"img/massage/weixin.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"zhuihao_ssc_help.html": {
+				"resources": [
+					"css/helps.css",
+					"shishicai_find.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"zhuihao_pk10_help.html": {
+				"resources": [
+					"css/helps.css",
+					"bjpk10_find.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"zhuihao_jsks_help.html": {
+				"resources": [
+					"jsks_find.html"
 				],
 				"refer": [],
 				"priority": 0

@@ -1,7 +1,7 @@
 $(function(){
          $.ajax({
              type: "post",
-             url: "http://47.94.140.92:8080/JDLot/type/jsks/list",
+             url: "http://47.94.140.92:8080/JDLot/type/jsks/alllist",
              data: {"PageNum":1,"PageSize":"10"},
              dataType: "json",
              success: function(data){
@@ -18,12 +18,16 @@ $(function(){
 										  '<th class="th_data3 lasts">回顾</th>'+
 										  '</tr>'; 
                          $.each(data, function(i){
-                         	 
+                         	 var uid= data[i].period;
+                           var unum= data[i].number;
+                           
+                         console.log(uid)
+                  uid=uid.substring(8);
                                    html+= '<tr>'+
-										  '<td class="th_data1">'+data[i].number+'</td>'+
-										  '<td class="th_data1">0822-'+(i> 9 ? i : "0"+i)+'</td>'+
+										  '<td class="th_data1_">'+uid+'</td>'+
+										  '<td class="th_data1">'+unum+'</td>'+
 										  '<td class="th_data2">独胆:'+i+'</td>'+
-										  '<td class="th_data3 lasts">回顾</td>'+    //回顾信息判断，如果匹配三期中的数据就返回“对”，否则“error”
+										  '<td class="th_data3 lasts" style="color:red;font-size:1rem">✔</td>'+    //回顾信息判断，如果匹配三期中的数据就返回“对”，否则“error”
 										  '</tr>'
                          });
                             html=html+'</table></li>';

@@ -7,10 +7,11 @@
 .headers{
 	width:100%;
 	height:3rem;
-	background:#DEEBF3;
+	background:#f00;
 	position:fixed;
 	top:0;
 	z-index: 3;
+	/*background:-webkit-linear-gradient(left,red 40%,orange 80%,#00f);*/
 }
 .tops{
 	width:100%;
@@ -34,6 +35,9 @@
 	font-weight: bold;
 	line-height: 3rem;
 	text-align: center;
+	background:-webkit-linear-gradient(left,#fc0,#fff 25%,#0f0 40%,#0ff 55%,#00f 70%,#f00);/*文字出现渐变色*/
+    -webkit-background-clip:text;/*只有webkit内核支持text的剪切模式*/
+  	color:transparent;
 }
 .centers{
 	width:100%;
@@ -79,4 +83,59 @@ width:33%;
 .bolid{
 	font-weight: bold;
 	padding-top: 1rem;
+}
+
+
+
+/*时时彩追号计划*/
+.ssc_massage{
+	width:100%;
+	position: relative;
+	top:3rem;
+	height:50%;
+	/*background:#e3d;*/
+	text-align: center;
+	padding:2rem 0;
+}
+.foot_massage{
+
+
+}
+
+/*江苏快三追号计划*/
+.jsks_massage{
+	width:100%;
+	height:100%;
+	/*background-color: gray;*/
+	text-align: center;
+	position: relative;
+	top:3rem;
+	padding:2rem 0;
+}
+
+
+
+/*pk10追号计划*/
+.pk_massage{
+		width:80%;
+	height:100%;
+	/*background-color: gray;*/
+	text-align: left;
+	position: relative;
+	margin:0 auto;
+	top:3rem;
+	padding:2rem 0;
+}
+.pk_massage p{
+   text-indent: 1.5rem;
+}
+.jsks_footer,.foot_massage,.pk_footer{
+	width:100%;
+	height:3rem;
+	line-height: 3rem;
+	font-size: 1rem;
+	background:red;
+	text-align: center;
+	position:fixed;
+	bottom:0;
 }
