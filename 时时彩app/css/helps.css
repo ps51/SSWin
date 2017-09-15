@@ -39,6 +39,7 @@
     -webkit-background-clip:text;/*只有webkit内核支持text的剪切模式*/
   	color:transparent;
 }
+
 .centers{
 	width:100%;
 	padding: 4rem 0;
@@ -62,6 +63,11 @@
 	
 	padding-bottom:1rem ;
 }
+.play_way p{
+	color:gray;
+	font-size: .5rem;
+	line-height: 1rem;
+}
 .zhongjiang table tr{
 width:100%;
 border:1px solid gray;
@@ -83,6 +89,7 @@ width:33%;
 .bolid{
 	font-weight: bold;
 	padding-top: 1rem;
+	color:#f7f;
 }
 
 
@@ -96,10 +103,6 @@ width:33%;
 	/*background:#e3d;*/
 	text-align: center;
 	padding:2rem 0;
-}
-.foot_massage{
-
-
 }
 
 /*江苏快三追号计划*/
@@ -126,6 +129,15 @@ width:33%;
 	top:3rem;
 	padding:2rem 0;
 }
+h3,h4{
+	color:orangered
+}
+.changes{
+	color:gray;
+    font-size: 0.5rem;
+    line-height: 2rem;
+    text-indent: 1.6rem;
+}
 .pk_massage p{
    text-indent: 1.5rem;
 }
@@ -138,4 +150,12 @@ width:33%;
 	text-align: center;
 	position:fixed;
 	bottom:0;
+	background: red;
+}
+.jsks_footer p,.foot_massage p,.pk_footer p{
+	line-height: 3rem;
+	font-weight: bolder;
+	background:-webkit-linear-gradient(left,#fc0,#fff 25%,#0f0 40%,#0ff 55%,#00f 70%,#f00);/*文字出现渐变色*/
+    -webkit-background-clip:text;/*只有webkit内核支持text的剪切模式*/
+  	color:transparent;
 }

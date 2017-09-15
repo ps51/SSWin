@@ -10,7 +10,7 @@
     "icons": {
         "72": "icon.png"
     },
-    "launch_path": "shishicai_find.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+    "launch_path": "jsks_find.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
     "developer": {
         "name": "wangwei",/*开发者名称*/
         "email": "jwjruning@163.com",/*开发者邮箱地址*/
@@ -307,7 +307,8 @@
 					"img/massage/up3x.png",
 					"img/massage/down.png",
 					"js/data_refish.js",
-					"zhuihao_ssc_help.html"
+					"zhuihao_ssc_help.html",
+					"js/pllan_huadong.js"
 				],
 				"refer": [],
 				"priority": 0
@@ -326,7 +327,19 @@
 				"resources": [
 					"shishicai_find.html",
 					"js/jsks_find.js",
-					"zhuihao_jsks_help.html"
+					"zhuihao_jsks_help.html",
+					"css/shishicai_zhuihao.css",
+					"js/showmassage.js",
+					"js/jquery-3.1.1.min.js",
+					"css/common.css",
+					"img/massage/bg_small.png",
+					"img/common/arrow3x.png",
+					"img/gray_help.png",
+					"img/massage/up3x.png",
+					"js/huadong.js",
+					"img/massage/down.png",
+					"js/data_refish.js",
+					"js/all_find.js"
 				],
 				"refer": [],
 				"priority": 0

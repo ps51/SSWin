@@ -47,10 +47,8 @@
 		</div> 
 		<div id="caizhong_shu">
 			<div class="finde">
-				<ul>
-					<li><a href="pic_zoushi.html">江苏快三</a></li>
-					<li><a href="pic_shishicai.html">重庆时时彩</a></li>
-					<li><a href="pic_pk10.html">北京PK10</a></li>
+				<ul id="caizhongjiekou">
+				
 				</ul>
 			</div>
 		</div>
@@ -68,7 +66,7 @@
 
 <div id="app">
 	    <div id="menu_con">
-	        <div class="tag" style="display:none;" >
+	        <div class="tag" style="display:block;" >
 	        	<!--数据展示开始-->
 	             <table class="app" >
 	            	<tr class="trss">
@@ -87,20 +85,20 @@
 	            	<tr v-for="item in data" class="trss" id="tress" v-cloak>
 	            		<td>{{item.period | jiequ}}</td>
 	            		<td style="color:#D91D37">{{item.number}}</td>
-	            		<td><span  v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime1}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime2}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime3}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime4}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime5}}</span></td>
-	            		<td><span  class="changches ertong">{{item.number | sum0}}</span></td>
-	            		<td><span  class="changches santong">{{item.number | sum01}}</span></td>
-	            		<td><span   class="changches">{{item.number | sum02}}</span></td>
+	            		<td><span class="show_1"></span><span class="show_2"  v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime}}</span></td>
+	            		<td><span class="show_1"></span><span class="show_2" v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime1}}</span></td>
+	            		<td><span class="show_1"></span><span class="show_2" v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime2}}</span></td>
+	            		<td><span class="show_1"></span><span class="show_2" v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime3}}</span></td>
+	            		<td><span class="show_1"></span><span class="show_2" v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime4}}</span></td>
+	            		<td><span class="show_1"></span><span class="show_2" v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime5}}</span></td>
+	            		<td><span class="show_1"></span><span  class="changches show_2 ertong">{{item.number | sum0}}</span></td>
+	            		<td><span class="show_1"></span><span  class="changches show_2 santong">{{item.number | sum01}}</span></td>
+	            		<td><span class="show_1"></span><span   class="changches show_2">{{item.number | sum02}}</span></td>
 	            	</tr>	    
 	            </table>
 	           
 	         </div> 
-	        <div class="tag" style="display:block;">  
+	        <div class="tag" style="display:none;">  
  <table class="app" >
 	            	<tr class="trss">
 	            		<th class="th_4">期号</th>
@@ -119,36 +117,38 @@
 	            		<td>{{item.period | jiequ}}</td>
 	            		<td style="color:#D91D37">{{item.number}}</td>
 	            		<td><span>{{item.number | sum}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime1}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime2}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime3}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime4}}</span></td>
-	            		<td><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | showTime5}}</span></td>
-	            		<td><span  class="changches ertong">{{item.number | sum0}}</span></td>
-	            		<td><span  class="changches santong">{{item.number | sum01}}</span></td>
-	            		<td><span   class="changches">{{item.number | sum02}}</span></td>
+	            		<td><span class="show_1"></span><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_1}}</span></td>
+	            		<td><span class="show_1"></span><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_2}}</span></td>
+	            		<td><span class="show_1"></span><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_3}}</span></td>
+	            		<td><span class="show_1"></span><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_4}}</span></td>
+	            		<td><span class="show_1"></span><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_5}}</span></td>
+	            		<td><span class="show_1"></span><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_6}}</span></td>
+	            		<td><span class="show_1"></span><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_7}}</span></td>
+	            		<td><span class="show_1"></span><span v-bind:class=" isshows == true ? 'huise':'bg_color' ">{{item.number | sum_8}}</span></td>
 	            	</tr>	    
 	            </table>
 
 	      </div> 
 
 	    </div> 
-     <div>
+     <!--<div>
 	    <table class="app" id="zstable">
             <thead></thead>
             <tbody></tbody>  
         </table>
         <div id="canvasdiv" class="canvasdiv"></div>
-	   	</div>
+	   	</div>-->
 	    <!--走势图蒙版-->
 		<div class="show_top" id="maskLayer" style="display:none">
 			<!--中间部分-->
+			<form action="">
 			<div class="top_cen">
 				 <div  class="design">
 				 	<p class="zoushi">走势图设制</p>
 				 	<a href="massage_help.html"><span><img src="img/massage/help3x.png" alt="帮助" /></span></a>
 				 </div>
 				 <div class="mian">
+				 	
 				 	<ul>
 				 		<li class="one">
 				 			<div class="qishu">
@@ -224,13 +224,14 @@
 				 				</a>
 				 			</div>
 				 		</li>
-				 	</ul>
+				 	</ul>	
 				 </div>
 				 <div id="tijiao">
 				<button id="popWindow" class="reset" onclick="closeDiv()"/>取消</button>
-				<button class="sures" onclick="showWindow()"/ >确定</button>
+				<button class="sures" onclick="closeDiv()"/ >确定</button>
 			</div>
 			</div>
+		</form>
 		</div>
 	<!--走势图蒙版结束-->
 	 </div>
@@ -245,7 +246,8 @@
 		<script src="js/showmassage.js"></script>
 		<script src="js/pic__zoushi.js"></script>
 		<script src="js/kuaisan_vue.js"></script>
-		<script type="text/javascript" src="js/line.js"></script>
+		<script type="text/javascript" src="js/all_pic.js"></script>
+		<!--<script type="text/javascript" src="js/line.js"></script>-->
 		<script type="text/javascript">
             $("#inputs5").click(function(){
               $(".canvasdiv").show()

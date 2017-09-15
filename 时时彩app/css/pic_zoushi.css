@@ -198,6 +198,7 @@ background:url(../img/massage/juxing-3@2x.png);
     position: fixed;
     bottom: 0;
     margin: auto;
+    font-size: 0.8rem;
 }
 .show_top .top_cen{
 	position:absolute;
@@ -217,7 +218,7 @@ background:url(../img/massage/juxing-3@2x.png);
 }
 .design{
 	width:100%;
-	height:4rem;
+	height:20%;
 	border-bottom:1px solid gray;
 }
 .design .zoushi{
@@ -225,7 +226,7 @@ background:url(../img/massage/juxing-3@2x.png);
     height:100%;
 	font-size: 1rem;
 	width:80%;
-	line-height: 4.3rem;
+	line-height: 4rem;
 	display: inline-block;
 	color:#000000;
 	text-align:left;
@@ -240,6 +241,7 @@ background:url(../img/massage/juxing-3@2x.png);
 	position: absolute;
 	right:5%;
 	top:5%;
+
 }
 .design span img{
 	width:100%;
@@ -247,23 +249,27 @@ background:url(../img/massage/juxing-3@2x.png);
 }
 .top_cen .mian{
 	width:100%;
+	height:auto;
 	color:#000;
 }
 .top_cen .mian ul li{
 	width: 100%;
-	height:3rem;
+	height:100%;
+	line-height: 2rem;
+	margin:1rem 0;
 }
-.top_cen .mian ul li.one{
-	padding-bottom: 1rem;
-}
+
 .top_cen .mian ul li .qishu{
 	width:20%;
-	float: left;	
+	height:100%;
+	float: left;
+	margin-top: 0.5rem;	
 	text-align: center;
-	padding-top:5px
+	
 }
 .top_cen .mian ul li .content{
 	width:80%;
+	height:100%;
 	float: left;
 	text-align: center;	
 
@@ -273,8 +279,9 @@ background:url(../img/massage/juxing-3@2x.png);
 	width:50%;
 	float: left;
 	color:#000000;
-	font-size:20px;
+	font-size:0.5rem;
 	text-indent: .8rem;
+	margin:0.2rem 0;
 }
 /*取消 提交*/
 .main input{
@@ -290,7 +297,7 @@ float: left;background:url(../img/massage/未选中圆圈@3x.png)no-repeat;
 }
 .top_cen .mian ul li .content a span{
 	vertical-align: middle;	
-	font-size:1rem;
+	font-size:0.5rem;
 	line-height: 2rem;
 	float: left;
 }
@@ -298,11 +305,8 @@ float: left;background:url(../img/massage/未选中圆圈@3x.png)no-repeat;
 #tijiao{
 	width:90%;
 	height:2rem;
-	margin:0 auto;
-	position: absolute;
-	left:0;
-	right:0;
-	bottom: 5%;
+	margin:1rem auto;
+
 }
 #tijiao button{
 	display: inline-block;

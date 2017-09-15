@@ -240,9 +240,8 @@ created:function(){
 	xhr.onreadystatechange=function(){
 		if (xhr.readyState==4) {	
 			that.data=eval('(' + xhr.responseText + ')');//转换json
-            that.data= that.data.datas.slice(0,30);
-
-             data_jiequ();//显示数据总分析
+            that.data= that.data.datas.slice(0,30);       
+		} data_jiequ();//显示数据总分析
             function data_jiequ(){
             var data= that.data;
             var ss0=0,ss1=0,ss2=0,ss3=0,ss4=0,ss5=0,ss6=0,ss7=0,ss8=0,ss9=0;
@@ -350,7 +349,6 @@ created:function(){
                $("#data_li10").text(ss9);
             }
           }
-		}
 	}
 	xhr.open("post","http://47.94.140.92:8080/JDLot/type/pk10/alllist",true);
 	xhr.setRequestHeader("Content-Type","application/json");//设置请求头
@@ -727,7 +725,8 @@ created:function(){
         if (xhr.readyState==4) {    
             that.data=eval('(' + xhr.responseText + ')');//转换json
             that.data= that.data.datas.slice(0,200);
-             data_jiequ();//显示数据总分析
+            
+        } data_jiequ();//显示数据总分析
             function data_jiequ(){
             var data= that.data;
             var ss0=0,ss1=0,ss2=0,ss3=0,ss4=0,ss5=0,ss6=0,ss7=0,ss8=0,ss9=0;
@@ -835,7 +834,6 @@ created:function(){
                $("#data_li10").text(ss9);
             }
           }
-        }
     }
     xhr.open("post","http://47.94.140.92:8080/JDLot/type/pk10/alllist",true);
     xhr.setRequestHeader("Content-Type","application/json");//设置请求头

@@ -120,7 +120,8 @@
       "img/massage/up3x.png",
       "img/massage/down.png",
       "js/data_refish.js",
-      "zhuihao_ssc_help.html"
+      "zhuihao_ssc_help.html",
+      "js/pllan_huadong.js"
     ],
     "refer": []
   },
@@ -139,7 +140,19 @@
     "resources": [
       "shishicai_find.html",
       "js/jsks_find.js",
-      "zhuihao_jsks_help.html"
+      "zhuihao_jsks_help.html",
+      "css/shishicai_zhuihao.css",
+      "js/showmassage.js",
+      "js/jquery-3.1.1.min.js",
+      "css/common.css",
+      "img/massage/bg_small.png",
+      "img/common/arrow3x.png",
+      "img/gray_help.png",
+      "img/massage/up3x.png",
+      "js/huadong.js",
+      "img/massage/down.png",
+      "js/data_refish.js",
+      "js/all_find.js"
     ],
     "refer": [
       "shishicai_find.html"

@@ -5,14 +5,14 @@
             slideDown2 = document.getElementById("slideDown2"); 
         slideDown2.style.display = "none"; 
         slideDown1.style.display = "block"; 
-        slideDown1.style.height = (parseInt("20px") - dist) + "px"; 
+        slideDown1.style.height = (parseInt("50px") - dist) + "px"; 
     } 
     //第二步：下拉，然后松开， 
     function slideDownStep2(){  
         var slideDown1 = document.getElementById("slideDown1"), 
             slideDown2 = document.getElementById("slideDown2"); 
         slideDown1.style.display = "none"; 
-        slideDown1.style.height = "20px"; 
+        slideDown1.style.height = "50px"; 
         slideDown2.style.display = "block"; 
         //刷新数据 
         location.reload(); 
