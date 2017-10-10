@@ -131,22 +131,25 @@ _background-color:#00FFFF;/*IE6*/
  line-height:0px;
  zoom: 1;
 }
-
+#caizhongjiekou{
+    z-index: 666;
+}
 
 /*媒体查询设置*/
 
 @media screen and (max-width: 320px){
     html,body{
         font-size:16px;
+        height:100%;
     }
 }
 @media screen and (max-width: 677px) and (min-width: 321px){
     html,body{
-        font-size:18px;
+        font-size:18px; height:100%;
     }
 }
 @media screen and (max-width: 1024px) and (min-width: 678px){
     html,body{
-        font-size:20px;
+        font-size:20px; height:100%;
     }
 }

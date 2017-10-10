@@ -1,112 +1,141 @@
-.app{
-	width:100%;
-	height:auto;
-	background: #FFFFFF;
-	font-size: .8rem;
-}
-  table { 
+*{margin:0;padding:0;font-family: "微软雅黑";}
+		.wrap{margin:0 auto;}
+		.tabs{position:fixed;z-index:2;height:32px;background: #F9F8F0;;width: 100%;padding-top: 8px;text-align: center}
+		.tabs .part{display:block;float:left;width:40%;color:#000;text-align:center;border:none!important;}
+		.tabs a{display:block;color:#000;text-align:center;margin:0 auto;font-size:16px;text-decoration:none;
+			padding-bottom: 2px;}
+		.tabs span.active a{color:red;border-bottom: 2px solid red;}
+		.swiper-container{width:100%;border-top:0;height:auto;}
+		.swiper-slide{width:100%;background:none;
+		}
+		p{text-align: center;}
+		table { 
+            position: relative;
             width:100%;
             border: 0;
-             margin: 0;
-              border-collapse: collapse;
-               border-spacing: 0;
-                font-size: 1rem;
-                 font-family: Arial; margin: 0 auto;
+            margin: 0;
+            border-collapse: collapse;
+            border-spacing: 0;
+            font-family: Arial, Verdana, Tahoma, "微软雅黑", Helvetica, sans-serif;; margin: 0 auto;
                   }
-        table td, table th {
-         padding: 0;
-          border: 1px solid #d8d8d8;
-             text-align: center; color: #666; }
-        table th { font-weight: bold; color: #000; }
-        .colors{
-            display: inline-block;
-            width:60%;
-            height:100%;
-            padding:5px 4px;
-            line-height: 1rem;
-            border-radius: 50%;
+                table  tr:nth-of-type(odd){background:#fff;}
+				table 	tr:nth-of-type(even){ background:#F9F8F0; }
+       table td, table th {
+         	padding: 0;
+        	border: 1px solid #d8d8d8;
+            height:1.5rem;
+			font-size: 0.8rem; 
+       		text-align: center;
+       		color: #3983cd 
+       	}
+        table th { 
+        font-weight: bold;
+        color: #000;
         }
-.app tr{
+        table th.th_wt{
+        	width:20%;
+        }
+        .colors{
+        	display: block;
+        	width:1rem;
+        	height:1rem;
+            line-height: 1rem;
+            border-radius: 100%;
+            margin:0 auto;
+            z-index: 55;
+            position: relative;
+        }
+        #canvasdiv{
+            display: block;
+            width:100%;
+        }
+         .main{
+        width:100%;
+        height:90%;
+    }
+    canvas{
+    	/*z-index:-5;*/
+    	margin-top:-5rem;
+    }
+    .col{
+			display: block;
+        	width:1rem;
+        	height:1rem;
+        	color:#fff;
+        	margin:0 auto;
+        	background-color: #579ee8;
+            line-height: 1rem;
+            border-radius: 100%;
+		}
+#totles,#totles1{
 	width:100%;
-	height:2rem;
-	/*border:1px solid gray;*/
+	padding:0;
+	background: gray;
+    display: none;
+	/*border:1px solid red;*/
 }
-.app tr th{
-	border-right:2px solid #E2E2DE;
+#totles li,#totles1 li{
+	width:100%;
+	height:1.2rem;
+	float:left;
 }
-.app tr th.fist{
-	width:18%;
-}
-.app tr th.th_2{
-	width:9%;
-}
- .app tr th.th_4{
-	width:10%;
-}
-.app tr td{
-	border:2px solid #E2E2DE;
-	color:#555;
-}
-.huise{
+#totles li span,#totles1 li span
+{
+	width:5%;
 	display: inline-block;
-	width:1.5rem;
-	height:1.5rem;
-	line-height: 1.5rem;
-	border:1px solid darkslategray;
-	border-radius:50%;
-	background: #0198E7;
-	color:#FFF;
-	border:none;
+	height:1.2rem;
+	font-size: 0.2rem;
+	line-height: 1.2rem;
+	float: left;
+	border:1px solid gray;
+	border-left: none;
+	text-align: center;
 }
-.bg_color{
-	display: inline-block;
-	width:1rem;
-	font-weight: bold;
-	border-radius:50%;
-	background-color: #0198E7;
-	color:#FFF;
-	padding:0 1px;
+#totles li span.times,#totles1 li span.times{
+	width:20%;
 }
-.bg_color11{
-	display: inline-block;
-	width:1rem;
-	font-weight: bold;
-	border-radius:50%;
-	background-color: #D91D37;
-	color:#FFF;
-	padding:0 1px;
+#totle{
+    width:100%;
+    padding:0;
+    background: gray;
+    display: none;
+    /*border:1px solid red;*/
 }
-.app tr td span.changches{
-	/*红色*/
-	width:90%;
-	height:60%;
-	border-radius:5px;
-	line-height: 1rem;
-	color: #D91D37;
+#totle  li{
+    width:100%;
+    height:1.2rem;
 }
-.app tr td span.santong{
-	/*蓝色*/
-	color:#0198E7;
-	/*border:1px solid #0198E7;*/
+#totle  li .stops{
+    width:100%;
+    height:1.2rem;
+    float: left;
 }
-/*三同*/
-.app tr td span.ertong{
-	color:#00FF40;
-	/*border:1px solid #00FF40;*/
+#totle  li .stops span
+{
+    width:6.3%;
+    display: inline-block;
+    height:1.2rem;
+    font-size: 0.2rem;
+    line-height: 1.2rem;
+    float: left;
+    border:1px solid #d8d8d8;
+    border-top:0;
+    border-left: none;
+    text-align: center;
 }
-[v-cloak] {
-  display: none;
+#totle li .stops  span.times{
+    width:19.5%;
 }
 /*隔行换色*/
 tr:nth-of-type(odd){background:#fff;}
 tr:nth-of-type(even){ background:#F9F8F0; }
-.lls:nth-of-type(odd){background:#fff;}
-.lls:nth-of-type(even){ background:#F9F8F0; }
-
+#totles li:nth-of-type(odd),#totles1 li:nth-of-type(odd){background:#fff;}
+#totles li:nth-of-type(even),#totles1 li:nth-of-type(even){ background:#F9F8F0; }
+#totle li:nth-of-type(odd){background:#fff;}
+#totle li:nth-of-type(even){background:#F9F8F0;}
 /*统计部分*/
 .data_fenxi{
 	width:100%;
-	height:8.5rem;
 	position: fixed;
 	bottom:0;
 	display: none;

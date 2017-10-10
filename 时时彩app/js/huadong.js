@@ -1,14 +1,14 @@
 // 滑动页面
 $(document).ready(function(e) {
-    var imgObj = document.getElementsByClassName("car_img");
+    var imgObj = document.getElementsByClassName("ones");
     var imgLen = imgObj.length;
-    var windowWidth = $(".car_img").width();
-    $(".car_img").on("click",function(event){
+    var windowWidth = $(".ones").width();
+    $(".ones").on("click",function(event){
 
     });
     // int = setInterval(carouselImg,3000);
     for(var i=0;i<imgLen;i++){
-        $(".car_img").eq(i).css({"top":"0","left":i*windowWidth});
+        $(".ones").eq(i).css({"top":"0","left":i*windowWidth});
         imgObj[i].addEventListener('touchstart',touchstart,false);
         imgObj[i].addEventListener('touchmove',touchmove,false);
         imgObj[i].addEventListener('touchend',touchend,false);
@@ -36,11 +36,11 @@ function touchmove(event){
     {
         var touch = event.targetTouches[0];
         var spanX = touch.pageX - pressX ,
-            windowWidth = $(".car_img").width();
-        var $car_img = $(".car_img"),
+            windowWidth = $(".ones").width();
+        var $car_img = $(".ones"),
             $this = $(this);
         var thisIndex = $this.index(),
-            imgLen = $(".car_img").length;
+            imgLen = $(".ones").length;
         for(var i=0;i < imgLen;i++){
             $car_img.eq(i).css("left",windowWidth*(i-thisIndex)+spanX);
         }
@@ -49,12 +49,12 @@ function touchmove(event){
 }
 
 function touchend(event){
-    var $car_img = $(".car_img"),
+    var $car_img = $(".ones"),
         $this = $(this),
         $carousel_icon = $(".carousel_icon"),
-        windowWidth = $(".car_img").width();
+        windowWidth = $(".ones").width();
     var thisIndex = $this.index(),
-        imgLen = $(".car_img").length;
+        imgLen = $(".ones").length;
     var thisLeft = parseInt($(this).css("left"));
     //向左滑动执行的方法
     if(thisLeft < -32 && thisIndex < imgLen){

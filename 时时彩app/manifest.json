@@ -6,26 +6,22 @@
         "name": "1.0",/*应用版本名称*/
         "code": ""
     },
-    "description": "",/*应用描述信息*/
+    "description": "推广",/*应用描述信息*/
     "icons": {
         "72": "icon.png"
     },
-    "launch_path": "jsks_find.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+    "launch_path": "all_find.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
     "developer": {
         "name": "wangwei",/*开发者名称*/
-        "email": "jwjruning@163.com",/*开发者邮箱地址*/
+        "email": "wjwruning@163.com",/*开发者邮箱地址*/
         "url": ""/*开发者个人主页地址*/
     },
     "permissions": {
         "Accelerometer": {
             "description": "访问加速度感应器"
         },
-        "Audio": {
-            "description": "访问麦克风"
-        },
-        "Messaging":{
-        	"description": "短彩邮件插件"
-        },
+        
+        
         "Cache": {
             "description": "管理应用缓存"
         },
@@ -35,9 +31,7 @@
         "Console": {
             "description": "跟踪调试输出日志"
         },
-        "Contacts": {
-            "description": "访问系统联系人信息"
-        },
+        
         "Device": {
             "description": "访问设备信息"
         },
@@ -84,9 +78,7 @@
         "Barcode": {
             "description": "管理二维码扫描插件"
         },
-        "Maps": {
-            "description": "管理地图插件"
-        },
+        
         "Speech": {
             "description": "管理语音识别插件"
         },
@@ -106,7 +98,7 @@
     "plus": {
         "splashscreen": {
             "autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
-            "waiting": true/*是否在程序启动界面显示等待雪花，true表示显示，false表示不显示。*/
+            "waiting": false/*是否在程序启动界面显示等待雪花，true表示显示，false表示不显示。*/
         },
         "popGesture": "close",/*设置应用默认侧滑返回关闭Webview窗口，"none"为无侧滑返回功能，"hide"为侧滑隐藏Webview窗口。参考http://ask.dcloud.net.cn/article/102*/
         "runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
@@ -126,12 +118,10 @@
                 "keystore": "",/*Android应用打包使用的密钥库文件*/
                 "password": "",/*Android应用打包使用密钥库中证书的密码*/
                 "aliasname": "",/*Android应用打包���用密钥库中证书的别名*/
-               "permissions": ["<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>","<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"]
+               "permissions": ["<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>"]
 				/*使用Native.js调用原生安卓API需要使用到的系统权限*/
             },
-            "orientation": [
-                "portrait-primary"
-            ],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+            "orientation": ["portrait-primary","portrait-secondary","landscape-primary","landscape-secondary"],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
             "icons": {
                 "ios": {
                     "prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
@@ -197,7 +187,7 @@
                     "xhdpi": "", /*720P高分屏启动图片，分辨率：720x1242*/
                     "xxhdpi": ""/*1080P高分屏启动图片，分辨率：1080x1882*/
                 }
-            }
+            },"debug":true
         }
     },
 	"dependencies": {
@@ -216,7 +206,6 @@
 					"img/massage/shezhi.png",
 					"img/massage/back.png",
 					"css/pic_zoushi.css",
-					"js/vue.js",
 					"css/common.css",
 					"css/data_show.css",
 					"js/pic__zoushi.js",
@@ -232,7 +221,14 @@
 					"img/massage/design3x.png",
 					"img/massage/help3x.png",
 					"img/common/arrow3x.png",
-					"img/massage/checked3x.png"
+					"img/massage/checked3x.png",
+					"img/massage/juxing-3@2x.png",
+					"js/all_pic.js",
+					"js/idangerous.swiper.min.js",
+					"js/zepto.min.js",
+					"css/swiper.min.css",
+					"js/changges_ks.js",
+					"feiting_pic.html"
 				],
 				"refer": [],
 				"priority": 0
@@ -339,7 +335,11 @@
 					"js/huadong.js",
 					"img/massage/down.png",
 					"js/data_refish.js",
-					"js/all_find.js"
+					"js/all_find.js",
+					"js/qiehuan.js",
+					"css/qiehuan.css",
+					"guangDong_find.html",
+					"deguoCar_find.html"
 				],
 				"refer": [],
 				"priority": 0
@@ -389,7 +389,108 @@
 			},
 			"zhuihao_jsks_help.html": {
 				"resources": [
+					"jsks_find.html",
+					"css/helps.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"guangDong_find.html": {
+				"resources": [
+					"js/guangDong_find.js",
 					"jsks_find.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"deguoCar_find.html": {
+				"resources": [
+					"js/deguoCar_find.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"tjssc_find.html": {
+				"resources": [
+					"guangDong_find.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"feiting_pic.html": {
+				"resources": [
+					"js/feiting.js",
+					"js/change_feiting.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"pic_tianjin.html": {
+				"resources": [
+					"js/changes_tjssc.js",
+					"js/tjssc.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"pic_xinjiang.html": {
+				"resources": [
+					"js/xjssc.js",
+					"js/changes_xjssc.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"pic_guangDong.html": {
+				"resources": [
+					"js/change_gd115.js",
+					"js/gd115.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"pic_deguoCar.html": {
+				"resources": [
+					"js/change_depk10.js",
+					"js/depk10.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"all_find.html": {
+				"resources": [
+					"js/jsks_find.js",
+					"gd115_find.html",
+					"js/pk10_find.js",
+					"js/qiehuan.js",
+					"js/deguoCar_find.js",
+					"js/feiting_find.js",
+					"img/common/arrow3x.png",
+					"img/massage/down.png",
+					"xyftpk10_find.html",
+					"sd115_find.html",
+					"xjssc_find.html",
+					"js/jquery-3.1.1.min.js",
+					"css/common.css",
+					"depk10_find.html",
+					"cqssc_find.html",
+					"css/qiehuan.css",
+					"jsks_find.html",
+					"js/tjssc_find.js",
+					"js/showmassage.js",
+					"pk10_find.html",
+					"img/gray_help.png",
+					"tjssc_find.html",
+					"js/pllan_huadong.js",
+					"css/shishicai_zhuihao.css",
+					"js/shishicai_find.js",
+					"js/xjssc_find.js",
+					"js/shanDong_find.js",
+					"img/massage/bg_small.png",
+					"img/massage/up3x.png",
+					"js/all_find.js",
+					"js/guangDong_find.js",
+					"js/huadong.js"
 				],
 				"refer": [],
 				"priority": 0
@@ -410,5 +511,5 @@
 				"img/图表走势.png"
 			]
 		}
-	}
+	},"fullscreen":true
 }

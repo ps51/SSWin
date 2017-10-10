@@ -32,10 +32,9 @@
 }
 .caizhong{
 	width:53%;
-	height:100%;
 	/*border:1px solid #959595;*/
 	display: inline-block;
-	float: left;
+	margin-left: 20%
 	
 }
 .caizhong .span{
@@ -68,16 +67,16 @@
 	right:10%;
 	top:36%;
 	display: inline-block;
-	border:.5rem solid red;
+	border:.4rem solid red;
 	border-color:#E65A59 transparent transparent transparent;
 }
 /*倒三角*/
 .caizhong span.daosanjiao{
 	position: absolute;
 	right:10%;
-	top:10%;
+	top:14%;
 	display: inline-block;
-	border:.5rem solid red;
+	border:.4rem solid red;
 	border-color: transparent transparent #E65A59 transparent ;
 	display: none;
 }
@@ -119,10 +118,10 @@
 }
 .set_massage a{
 
-	margin-top: 0.388rem;
+	margin-top: 0.7rem;
 	display: inline-block;
-	width:2rem;
-	height:2rem
+	width:1.5rem;
+	height:1.5rem
 }
 .set_massage a img{
 	width:100%;
@@ -150,39 +149,6 @@
 /*选项卡功能代码*/
 #menu{
 	width:100%; }
-#menu #nav {
-	display:block;
-	height:3rem;
-	width:100%;
-	padding:0;
-	margin:0;
-	list-style:none;
-	background-color:#F9F8F0;}
-#menu #nav li {
-	float:left;
-	width:40%;
-	height:100%;}
-#menu #nav li a {
-	width:100%;
-	display:block;
-	line-height:2.8rem;
-	text-decoration:none;
-	margin:0 0 0 22px; 
-	text-align:center; 
-	color:#333;
-	clear: both;}
-#menu_con{ 
-	width:100%; 
-	display: block;
-	 border-top:none;
-	 clear: both;}
-.tag{ 
-	width:100%;
-    /*border-top:1px solid gray;*/
- overflow:hidden;}
-#menu #nav li a.selected{
-	color:red;
-	border-bottom:2px solid red}
 /*选项卡功能代码*/
 
 /*蒙版开始*/
