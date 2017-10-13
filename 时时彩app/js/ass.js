@@ -5,7 +5,7 @@ $(function(){
       $("#inputs6").click(function(){
               $(".canvasdiv").hide()
       })
-        var num=30;//num 显示数据长度
+        var num=50;//num 显示数据长度
     $("#inputs1").click(function(){
       $(".canvasdiv canvas").remove();
       num=30;
@@ -47,6 +47,9 @@ $("#inputs10").click(function(){
              async:true,
              contentType: "application/json",
              dataType: "json",
+            beforeSend: function(XMLHttpRequest) {
+                              $("body").append('<div  id="load" style="z-index:10; position:fixed; top:0;left:0;right:0;bottom:0;margin:auto;width:4rem;height:4rem"><img alt="数据加载中..." src="img/massage/4c3ba25d7384dee10d565e7f20c89400_t014be238bb089e1e42.gif" style="width:100%"/></div>');
+                               },
              success: function(data){
                      data=data.datas;
                      console.log(data)
@@ -228,7 +231,8 @@ $("#inputs10").click(function(){
 
 
 
-     }
+     },
+      complete: function(XMLHttpRequest, textStatus) {$("#load").remove(); }
 
   })
 }

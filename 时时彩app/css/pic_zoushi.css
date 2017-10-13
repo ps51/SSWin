@@ -1,6 +1,6 @@
 #pic_top{
 	width:100%;
-	height:50px;
+	height:3rem;
 	background-color:white;
 	position:fixed;
 	top:0;
@@ -34,7 +34,7 @@
 	width:53%;
 	/*border:1px solid #959595;*/
 	display: inline-block;
-	margin-left: 20%
+	margin-left: 30%
 	
 }
 .caizhong .span{
@@ -49,10 +49,11 @@
 }
 #caizhong_mian{
 	width:70%;
-	height:75%;
+	height:2rem;
+	line-height: 2rem;
 	margin-top:0.4rem;
 	font-weight: bold;
-	font-size:0.9375rem;
+	font-size:1rem;
 	border:1px solid #959595;
 	border-radius:8px;
 	display: inline-block;
@@ -83,8 +84,8 @@
 #caizhong_mian .caipiao_leixing{
 	display: inline-block;
 	width:70%;
-	height:100%;
-	line-height: 220%;
+	height:2rem;
+	line-height: 2rem;
 	text-align: center;
 	color:#555555;
 }
@@ -102,10 +103,12 @@
 	background: #FFFFFF;
 	text-align: center;
 	line-height: 2rem;
-	margin:15px 1%;
+	margin:7.5px 1.3%;
 }
 #caizhong_shu ul li a{
-    font-weight: bold;
+	display: block;
+	width:100%;
+	height:100%;
 	font-size:0.875rem;
 	color:#555;
 	line-height: 2rem;
@@ -117,21 +120,20 @@
 	float: right;
 }
 .set_massage a{
-
+-webkit-tap-highlight-color: transparent;
 	margin-top: 0.7rem;
 	display: inline-block;
 	width:1.5rem;
-	height:1.5rem
+	height:1.5rem;
+		background:url(../img/massage/design3x.png)no-repeat;
+	background-size: cover;
 }
-.set_massage a img{
-	width:100%;
-	height:100%;
-}
+
 
 /*彩票具体分布*/
 #mian_body{
 	width:100%;
-	margin-top:2.8rem;
+	margin-top:3rem;
 	background: #F9F8F0;
 }
 .bottom li{
@@ -159,7 +161,7 @@ background:url(../img/massage/juxing-3@2x.png);
     left: 0;
     top: 0;
     right: 0;
-    z-index: 1;
+    z-index: 555;
     font-weight: bold;
     position: fixed;
     bottom: 0;

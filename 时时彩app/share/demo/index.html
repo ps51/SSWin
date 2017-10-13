@@ -7,55 +7,13 @@
 		minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
 		<link rel="stylesheet" type="text/css" href="../../css/tuiguang.css"/>
-		<script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
 
 </head>
 <body>
-<!-- 头部开始 -->
-<div class="header">
-	<div class="pic_set">
-			<!--返回上一页开始-->
-			<div class="back">
-					<a class="back_pre" href="#" onClick="javascript:history.go(-1);" alt="推广"></a>
-			</div>
-			<p class="tuisong">
-					<span class="hh1">推广分享</span>
-			</p>
-			<div class="wanshan">
-					<a class="massage" href="self_center.html">完善资料</a>
-			</div>
-			<!--返回上一页结束-->
-	</div>
-</div>
-<!-- 头部结束 -->
 <!-- 邀请码开始 -->
 <div class="yaoqingma">
 	<div class="yaoqing">
-		<script type="text/javascript">
-			//复制张贴JS代码
-			  function copyUrl2()
-			  {
-			  var Url2=document.getElementById("biao1");
-			  Url2.select(); // 选择对象
-			  document.execCommand("Copy"); // 执行浏览器复制命令
-			  // alert("已复制好,可贴粘");
-			  }
-		</script>
-		 <p class="bg_yao">邀请码</p>
-		 <input type="text" id="biao1" value="444444" disabled="disabled">
-		 <input type="button" onClick="copyUrl2()" class="fuzhi" value="点击复制代码" style="background-color: orange;border-radius: 5px"/>
-		 <div class="go_yaoqing">
-		 	<span>去邀请</span>
-		 	<a class="show" onclick="call('weibo')"><img src="../../img/massage/go.png"></a><!-- 控制蒙版显示 -->
-		 </div>
+		 	<span style="color:#fff;background-color:orange;display: block;width:80%;margin:2rem auto;border-radius: 5px " onclick="alert(2)">一键分享</span>
 	</div>
 </div>
 <!-- 邀请码结束 -->
@@ -76,39 +34,5 @@
 <!-- 中间介绍结束 -->
 
 <!-- 蒙版开始 -->
-<script type="text/javascript" src="../NativeShare.js"></script>
-    <script>
-        var nativeShare = new NativeShare()
-        var shareData = {
-            title: 'NativeShare',
-            desc: '说干就干啦',
-            // 如果是微信该link的域名必须要在微信后台配置的安全域名之内的。
-            link: 'https://github.com/fa-ge/NativeShare',
-            icon: 'https://pic3.zhimg.com/v2-080267af84aa0e97c66d5f12e311c3d6_xl.jpg',
-            // 不要过于依赖以下两个回调，很多浏览器是不支持的
-            success: function() {
-                alert('success')
-            },
-            fail: function() {
-                alert('fail')
-            }
-        }
-        nativeShare.setShareData(shareData)
-
-        function call(command) {
-            try {
-                nativeShare.call(command)
-            } catch (err) {
-                // 如果不支持，你可以在这里做降级处理
-//              alert(err.message)
-            }
-        }
-
-        function setTitle(title) {
-            nativeShare.setShareData({
-                title: title,
-            })
-        }
-        </script>
 </body>
 </html>

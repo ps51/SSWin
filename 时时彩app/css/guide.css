@@ -1,0 +1,39 @@
+#tops{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+}
+.guide_lis{
+	width:100%;
+	list-style: none;
+	margin-top: 1rem;
+}
+.guide_lis li{
+	float:left;
+	width:20%;
+	height:2rem;
+	line-height: 2rem;
+	margin:1rem 1.55rem;
+	margin-top: 0;
+	background-color: green;
+	color:#fff;
+	/*border:1px solid red;*/
+	border-radius: 5px;
+}
+.guide_lis li.liclick{
+	background-color: red
+}
+.use_guides{
+	margin-top:2rem;
+	width:100%;
+}
+.guide{
+	width:100%;
+	margin:0 auto;
+}
+.guide li{
+	width:100%;
+	height:auto;
+	background: gray;
+	display: none;
+}

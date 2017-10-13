@@ -10,7 +10,7 @@ body {
 font-size: 1rem;
 text-align: center;
 color: #000000;
-background-color: #DEEBF3;
+background-color: #fff;
 /*background-image: url(../Images/body_bg.jpg);*/
 background-repeat: repeat-x;
 }
@@ -49,16 +49,12 @@ margin-right: auto;
 margin-left: auto;
 }
 /*css定义超链接四个状态也有顺序的。*/
-/*a:link, a:visited {
-	display: block;
-text-decoration: none;
-color: #1F376D;
+a:link, a:visited {
+-webkit-tap-highlight-color: transparent;
 }
 a:hover, a:active {
-text-decoration: none;
-color: #BD0A01;
-border: none;
-}*/
+-webkit-tap-highlight-color: transparent;
+}
 /*以上语句分别定义了"链接、已访问过的链接、鼠标停在上方时、点下鼠标时"的样式。
 注意，必须按以上顺序写，否则显示可能和你预想的不一样。记住它们的顺序是“LVHA”。*/
 ul {
@@ -137,19 +133,80 @@ _background-color:#00FFFF;/*IE6*/
 
 /*媒体查询设置*/
 
-@media screen and (max-width: 320px){
-    html,body{
+
+
+/@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){
+/* 兼容iphone5 */
+ html,body{
+        font-size:14px;
+        height:100%;
+    }
+}
+@media only screen and (max-device-width :480px){
+     html,body{
+        font-size:16px;
+        height:100%;
+    }
+ }
+@media only screen and (min-device-width :481px){ 
+     html,body{
         font-size:16px;
         height:100%;
     }
 }
-@media screen and (max-width: 677px) and (min-width: 321px){
-    html,body{
-        font-size:18px; height:100%;
+
+/*6*/
+@media (min-device-width : 375px) and (max-device-width : 667px) and (-webkit-min-device-pixel-ratio : 2){
+     html,body{
+        font-size:16px;
+        height:100%;
+    }
+ }
+
+/*6+*/
+@media (min-device-width : 414px) and (max-device-width : 736px) and (-webkit-min-device-pixel-ratio : 3){
+     html,body{
+        font-size:16px;
+        height:100%;
+    }
+ }
+
+/*魅族*/
+@media only screen and (min-device-width :1080px) and (-webkit-min-device-pixel-ratio : 2.5){
+     html,body{
+        font-size:18px;
+        height:100%;
+    }
+ }
+
+/*mate7*/
+@media only screen and (min-device-width :1080px) and (-webkit-min-device-pixel-ratio : 3){
+     html,body{
+        font-size:18px;
+        height:100%;
+    }
+ }
+
+/*4 4s*/
+@media only screen and (device-height :480px) and (-webkit-device-pixel-ratio:2){ 
+     html,body{
+        font-size:14px;
+        height:100%;
     }
 }
-@media screen and (max-width: 1024px) and (min-width: 678px){
-    html,body{
-        font-size:20px; height:100%;
+
+@media screen and (min-width: 320px) and (max-width: 480px) { 
+     html,body{
+        font-size:16px;
+        height:100%;
+    }
+ }
+
+
+/* PC客户端或大屏幕设备: 1028px 至更大 */
+@media only screen and (min-width: 1029px) {
+ html,body{
+        font-size:26px;
+        height:100%;
     }
 }

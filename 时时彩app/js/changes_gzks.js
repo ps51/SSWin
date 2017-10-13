@@ -43,7 +43,7 @@ $("#inputs10").click(function(){
          $.ajax({
              type: "post",
              url: "https://www.jindi163.com:8443/JDLot/lot/type/pagelist",
-             data: {"table_name":"gxks","PageNum":"1","PageSize":num},
+             data: {"table_name":"gzks","PageNum":"1","PageSize":num},
              async:true,
              contentType: "application/json",
              dataType: "json",

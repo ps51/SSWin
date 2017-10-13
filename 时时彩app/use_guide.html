@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>使用指南</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, 
+		minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/guide.css" />
+</head>
+<body>
+<div id="tops">
+	<ul class="guide_lis">
+		<li class="liclick">登录注册</li>
+		<li>添加彩种</li>
+		<li>收费列表</li>
+		<li>追号计划</li>
+		<li>开奖号码</li>
+		<li>用户中心</li>
+		<li>推广中心</li>
+		<li>我的积分</li>
+	</ul>
+</div>
+<div class="use_guides">
+	<ul class="guide">
+		<li style="display: block;">1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+	</ul>
+</div>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".guide_lis li").each(function(i){
+			$(this).click(function(){
+			var index=i;
+			$(this).addClass("liclick").siblings().removeClass("liclick");
+			$(".guide").children().eq(index).show().siblings().hide();
+		})
+		})
+	})
+</script>
+</body>
+</html>
